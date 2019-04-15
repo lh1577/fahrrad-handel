@@ -15,25 +15,25 @@
     "name": "Fahrrad 3",
     "beschreibung": "Das hier ist ein sehr tolles  fahrad",
     "preis": 599.99,
-    "imageUrl": "images/i.jpg"
+    "imageUrl": "images/iii.jpg"
 },{
     "artikelNr": 4,
     "name": "Fahrrad 4",
     "beschreibung": "Das hier ist ein sehr tolles  fahrad !!!",
     "preis": 899.99,
-    "imageUrl": "images/i.jpg"
+    "imageUrl": "images/iiii.jpg"
 
 },{
     "artikelNr": 5,
     "name": "Fahrrad 5",
     "beschreibung": "Das hier ist ein sehr tolles  fahrad",
     "preis": 899.99,
-    "imageUrl": "images/i.jpg"
+    "imageUrl": "images/5i.jpg"
 
 },{
     "artikelNr": 6,
     "name": "Fahrrad 6",
     "beschreibung": "Das hier ist ein sehr tolles  fahrad",
     "preis": 999.99,
-    "imageUrl": "images/i.jpg"
+    "imageUrl": "images/6i.jpg"
 }]
