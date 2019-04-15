@@ -1,0 +1,204 @@
+iframe {
+    width: 1900px;
+    height: 720px;
+}
+
+h1 {
+    text-align: center;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color:white;
+    font-size: 1.0em;
+}
+
+h1 {
+    background-color: yellowgreen;
+    color: white;
+    margin: 15px;
+    padding: 5px;
+    border-radius: 12px;
+    text-align: center;
+
+}
+
+
+ul {
+    background-color: slategrey;
+    border-radius: 12px;
+    margin: 12px;
+    padding: 10px;
+}
+
+
+.button_main {
+    text-decoration: none;
+    background-color: yellowgreen;
+    border: 3px solid;
+    border-radius: 12px;
+    color: white;
+    margin: 12px;
+    padding: 5px;
+    text-align: center;
+
+}
+
+.button_main:hover {
+    color: yellowgreen;
+    background-color: white;
+    border: 3px solid yellowgreen;
+    border-radius: 12px;
+    margin: 12px;
+    padding: 5px;
+   
+}
+.gg{
+    margin-left:75px;
+}
+.gg:hover{
+    margin-left:75px;
+}
+
+h3 {
+    background-color: slategrey;
+    color: white;
+    padding: 10px;
+    margin: 12px;
+    border-radius: 12px;
+    width: 275px;
+
+
+}
+
+p {
+    background-color: yellowgreen;
+    color: white;
+    margin: 12px;
+    padding: 10px;
+    border-radius: 12px;
+    width: 320px;
+}
+#para_anmelden{
+    text-decoration:none;
+    position:relative;
+    
+    
+}
+
+.flexcontainer {
+    display: flex;
+    width: 600px;
+}
+
+h2,
+.flexcontainer {
+    background-color: slategrey;
+    border-radius: 12px;
+    margin: 12px;
+    padding: 5px;
+    align-self: center;
+    color:white;
+}
+
+input {
+    width: 320px;
+    height: 30px;
+    font-size: 1.2em;
+    margin:4px;
+}
+
+.head_ {
+    width: 600px;
+}
+
+.button_anmelden {
+    width: 600px;
+    margin: 12px;
+    padding: 5px;
+    border-radius: 12px;
+    background-color: yellowgreen;
+    color: white;
+    text-align: center;
+
+}
+
+.button_anmelden:hover {
+    color: yellowgreen;
+    background-color: white;
+    border: 1px solid yellowgreen;
+    text-align: center;
+
+}
+.unorli_{
+    background-color:slategray;
+}
+.para_{
+    float:left;
+    width:320px;
+    height:400px
+}
+.li_{
+    list-style:circle;
+}
+.fdh{
+    color:white;
+    background-color:yellowgreen;
+    
+}
+.im_cl{
+    
+    height:320px;
+    width:400px;
+    border-radius:12px;
+
+
+}
+.u_cl{
+    margin:12px;
+    padding:5px;
+    width:340px;
+    height:400px;
+    
+}
+
+
+
+
+.li_cl{
+    list-style-type:circle;
+    color:white;
+    background-color:yellowgreen;
+    margin:20px;
+    padding:12px;
+    font-size:1.2em;
+    border-radius:12px;
+    
+
+}
+.d_im{
+    display:flex;
+}
+table, td, th {  
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 15px;
+  }
+th{
+    color:white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color:yellowgreen;
+    border-radius: 12px 12px 0px 0px;
+}
+.fiv{
+    display:flex;
+}
+

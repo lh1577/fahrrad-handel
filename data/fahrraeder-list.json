@@ -1,0 +1,39 @@
+[{
+    "artikelNr": 1,
+    "name": "Fahrrad 1",
+    "beschreibung": "Das hier ist ein sehr tolles fahhrad!",
+    "preis": 599.99,
+    "imageUrl": "images/i.jpg"
+}, {
+    "artikelNr": 2,
+    "name": "Fahrrad 2",
+    "beschreibung": "Das hier ist ein sehr tolles fahhrad!",
+    "preis": 599.99,
+    "imageUrl": "images/i.jpg"
+}, {
+    "artikelNr": 3,
+    "name": "Fahrrad 3",
+    "beschreibung": "Das hier ist ein sehr tolles  fahrad",
+    "preis": 599.99,
+    "imageUrl": "images/i.jpg"
+},{
+    "artikelNr": 4,
+    "name": "Fahrrad 4",
+    "beschreibung": "Das hier ist ein sehr tolles  fahrad !!!",
+    "preis": 899.99,
+    "imageUrl": "images/i.jpg"
+
+},{
+    "artikelNr": 5,
+    "name": "Fahrrad 5",
+    "beschreibung": "Das hier ist ein sehr tolles  fahrad",
+    "preis": 899.99,
+    "imageUrl": "images/i.jpg"
+
+},{
+    "artikelNr": 6,
+    "name": "Fahrrad 6",
+    "beschreibung": "Das hier ist ein sehr tolles  fahrad",
+    "preis": 999.99,
+    "imageUrl": "images/i.jpg"
+}]

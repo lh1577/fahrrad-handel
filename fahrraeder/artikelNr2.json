@@ -1,0 +1,10 @@
+{
+    "artikelNr": 2,
+    "name": "Mountain Bike ",
+    "beschreibung": "Das hier ist ein sehr tolles fahhrad!",
+    "preis": 599.99,
+    "imageUrl": "images/i.jpg",
+    "groesse": 3,
+    "gewicht": 5,
+    "hersteller": "asdasd"
+}
