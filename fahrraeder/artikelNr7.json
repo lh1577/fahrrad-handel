@@ -1,0 +1,10 @@
+{
+    "artikelNr": 7,
+    "name": "Fahrrad 7",
+    "beschreibung": "ein Tandem!!!!",
+    "preis": 9999.99,
+    "imageUrl": "images/7i.jpg",
+    "groesse": 5,
+    "gewicht": 3.5,
+    "hersteller": "Canyon"
+}

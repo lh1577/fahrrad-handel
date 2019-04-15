@@ -36,4 +36,28 @@
     "beschreibung": "Das hier ist ein sehr tolles  fahrad",
     "preis": 999.99,
     "imageUrl": "images/6i.jpg"
+},{
+    "artikelNr": 7,
+    "name": "Fahrrad 7",
+    "beschreibung": "Das hier ist ein sehr tolles  fahrad",
+    "preis": 999.99,
+    "imageUrl": "images/7i.jpg"
+},{
+    "artikelNr": 8,
+    "name": "Fahrrad 8",
+    "beschreibung": "Das hier ist ein sehr tolles  fahrad",
+    "preis": 999.99,
+    "imageUrl": "images/8i.jpg"
+},{
+    "artikelNr": 9,
+    "name": "Fahrrad 9",
+    "beschreibung": "Das hier ist ein sehr tolles  fahrad",
+    "preis": 999.99,
+    "imageUrl": "images/9i.jpg"
+},{
+    "artikelNr": 10,
+    "name": "Fahrrad 10",
+    "beschreibung": "Das hier ist ein sehr tolles  fahrad",
+    "preis": 999.99,
+    "imageUrl": "images/10i.jpg"
 }]

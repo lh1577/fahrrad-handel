@@ -1,0 +1,10 @@
+{
+    "artikelNr": 8,
+    "name": "Fahrrad 8",
+    "beschreibung": "unbeschreiblich!!!",
+    "preis": 9999.99,
+    "imageUrl": "images/8i.jpg",
+    "groesse": 5,
+    "gewicht": 3.5,
+    "hersteller": "Canyon"
+}

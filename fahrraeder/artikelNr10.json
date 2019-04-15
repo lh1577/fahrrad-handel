@@ -1,0 +1,10 @@
+{
+    "artikelNr": 10,
+    "name": "Fahrrad 10",
+    "beschreibung": "ein Tandem!!!!",
+    "preis": 9999.99,
+    "imageUrl": "images/10i.jpg",
+    "groesse": 5,
+    "gewicht": 3.5,
+    "hersteller": "Canyon"
+}

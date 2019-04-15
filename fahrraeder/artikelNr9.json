@@ -1,0 +1,10 @@
+{
+    "artikelNr": 9,
+    "name": "Fahrrad 9",
+    "beschreibung": "WOW!!!",
+    "preis": 9999.99,
+    "imageUrl": "images/9i.jpg",
+    "groesse": 5,
+    "gewicht": 3.5,
+    "hersteller": "Canyon"
+}
