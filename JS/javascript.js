@@ -111,6 +111,25 @@ function buttonclick(mouseEvent) {
         detailloaded(mouseEvent);
     })
 }
+function quizload(){
+    sendRequest("data/quizfrage.json",function(data){
+        var loadquestion = JSON.parse(data)
+        document.getElementById("quizsite").innerHTML="";
+        quizshow(loadquestion)
+        console.log("data found quizfrage")
+    })
+    sendRequest("data/quizant.json",function(data){
+        var loadanswer = JSON.parse(data)
+        quizshow(loadanswer)
+        console.log("data found answer")
+
+    })
+    
+}
+function quizshow(a,b){
+    var elem = document.getElementById("quizsite");
+
+}
 function detailloaded(mouseEvent) {
     sendRequest("fahrraeder/artikelNr" + mouseEvent.target.artikelNr + ".json", function (data) {
         var loadartikel = JSON.parse(data);
