@@ -262,8 +262,6 @@ function warenkorb(mouseEvent) {
     })
     console.log("data found for cart")
     function createacart(inf) {
-        console.log(inf && inf.name)
-        console.log(inf && inf.preis)
         var dw = document.createElement("dic")
         var hw = document.createElement("h1")
         var hwin = document.createTextNode("Warenkorb")
@@ -296,7 +294,6 @@ function warenkorb(mouseEvent) {
         var thw3in = document.createTextNode("Preis")
 
         if (inf && !cart.includes(inf)) {
-            console.log("cart[inf]==null")
             cart.push(inf)
         }
         elem = document.getElementById("warenkorb")
@@ -325,8 +322,10 @@ function warenkorb(mouseEvent) {
             var buttdin = document.createTextNode("")
             buttd.appendChild(buttdin)
             buttd.classList.add("buttd")
-            buttd.classList.add("buttd")
-            buttd.onclick=deletoneit;
+            buttd.classList.add("fas", "fa-trash-alt")
+            buttd.onclick=function(){
+                deletoneit(cart[i])
+            }
             var tdw2in = document.createTextNode(cart[i].beschreibung)
             var tdw4 = document.createElement("td")
             var tdw4in = document.createElement("img")
@@ -345,16 +344,20 @@ function warenkorb(mouseEvent) {
             trw1.appendChild(tdw4)
             trw1.appendChild(tdw3)
             tab.appendChild(trw1)
-        }
-        console.log(cart)
-        function deletoneit() {
-            cart.delet()
-            document.getElementById("warenkrob").innerHTML="";
-            warenkorb();
+            console.log(cart)
+
+
             
             
 
         }
+        function deletoneit(i) {
+            console.log(cart)
+            delete cart[i]
+            document.getElementById("warenkorb").innerHTML="";
+            createacart()
+
+    }
         function plus() {
             loadanypage(5);
         }
