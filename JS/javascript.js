@@ -185,16 +185,32 @@ function antwert(event, frage, selectedAnswer){
         console.log("Richtig")
         var pop = document.createElement("div")
         pop.classList.add("pop")
+        var bim = document.createElement("div")
+        bim.classList.add("bim")
         var ph1 = document.createElement("h1")
         var ph1in = document.createTextNode("Richtig!!!")
         var pbut = document.createElement("button")
         var pbutin = document.createTextNode("Schließen")
+        var bes = document.createElement("p")
+        var besin = document.createTextNode(frage.B)
+        bes.classList.add("bes")
+        var pim = document.createElement("img")
+        pim.src=frage.U
+        var p1im = document.createElement("img")
+        p1im.src=frage.U1
+        bes.appendChild(besin)
         pbut.onclick=closeantwert
         pbut.classList.add("pbut")
         pbut.appendChild(pbutin)
         ph1.appendChild(ph1in)
+        bim.appendChild(bes)
+        bim.appendChild(pim)
+        bim.appendChild(p1img)
+
+
         pop.appendChild(ph1)
         pop.appendChild(pbut)
+        pop.appendChild(bim)
         eleme.appendChild(pop);
 
     }

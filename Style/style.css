@@ -268,3 +268,13 @@ th{
     margin:12px;
     padding:5px;
 }
+
+.bes{
+    background-color:slategrey;
+    color:white;
+    border-radius:12px;
+    
+}
+.bim{
+    display:flex;
+}
