@@ -262,8 +262,8 @@ function warenkorb(mouseEvent) {
     })
     console.log("data found for cart")
     function createacart(inf) {
-        console.log(inf.name)
-        console.log(inf.preis)
+        console.log(inf && inf.name)
+        console.log(inf && inf.preis)
         var dw = document.createElement("dic")
         var hw = document.createElement("h1")
         var hwin = document.createTextNode("Warenkorb")
@@ -295,7 +295,7 @@ function warenkorb(mouseEvent) {
         thw3.classList.add("thw")
         var thw3in = document.createTextNode("Preis")
 
-        if (!cart.includes(inf)) {
+        if (inf && !cart.includes(inf)) {
             console.log("cart[inf]==null")
             cart.push(inf)
         }
@@ -321,6 +321,12 @@ function warenkorb(mouseEvent) {
             var tdw1 = document.createElement("td")
             var tdw1in = document.createTextNode(cart[i].name)
             var tdw2 = document.createElement("td")
+            var buttd = document.createElement("button")
+            var buttdin = document.createTextNode("")
+            buttd.appendChild(buttdin)
+            buttd.classList.add("buttd")
+            buttd.classList.add("buttd")
+            buttd.onclick=deletoneit;
             var tdw2in = document.createTextNode(cart[i].beschreibung)
             var tdw4 = document.createElement("td")
             var tdw4in = document.createElement("img")
@@ -330,6 +336,7 @@ function warenkorb(mouseEvent) {
             var tdw3in = document.createTextNode(cart[i].preis)
 
             tdw1.appendChild(tdw1in)
+            tdw1.appendChild(buttd)
             tdw2.appendChild(tdw2in)
             tdw3.appendChild(tdw3in)
             tdw4.appendChild(tdw4in)
@@ -341,8 +348,11 @@ function warenkorb(mouseEvent) {
         }
         console.log(cart)
         function deletoneit() {
-            cart.pop();
-
+            cart.delet()
+            document.getElementById("warenkrob").innerHTML="";
+            warenkorb();
+            
+            
 
         }
         function plus() {

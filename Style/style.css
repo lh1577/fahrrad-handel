@@ -320,3 +320,11 @@ th{
     color:slategrey;
     border:2px solid white;
 }
+.buttd{
+    background-color:slategrey;
+    color:white;
+    width:20px;
+    display:block;
+    margin:10px;
+    border:none;
+}
