@@ -251,6 +251,8 @@ th{
     left:100px;
     right:100px;
     bottom:100px;
+    height:500px;
+    border-radius:12px;
 
 
 }
@@ -277,4 +279,11 @@ th{
 }
 .bim{
     display:flex;
+    justify-content: center;
+}
+.ph1_correct{
+    background-color:green;
+}
+.ph1_wrong{
+    background-color:red;
 }

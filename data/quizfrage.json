@@ -14,7 +14,10 @@
         "A1":"Geraint Thomas",
         "A2":"Peter Sagan",
         "A3":"Chris Froome",
-        "correctAnswer":"A1"
+        "correctAnswer":"Geraint Thomas",
+        "B":"Geraint Howell Thomas, OBE, Spitzname „G“, ist ein britischer Bahn- und Straßenradrennfahrer aus Wales. Er wurde zweifacher Olympiasieger und dreifacher Weltmeister in der Mannschaftsverfolgung und gewann die Tour de France 2018.",
+        "U":"images/a22.jpg",
+        "U1":"images/a2.jpg"
         
     },
     {
@@ -22,7 +25,10 @@
         "A1": "Citybike",
         "A2": "Mountainbike",
         "A3": "Rennrad",
-        "correctAnswer":"A2"
+        "correctAnswer":"Mountainbike",
+        "B":"Ein Mountainbike oder Geländefahrrad ist ein Fahrrad, das besonders auf den Einsatz abseits befestigter Straßen ausgerichtet ist",
+        "U":"images/a3jpg.jpg",
+        "U1":"images/33.jpg"
 
     },
     {
@@ -30,13 +36,19 @@
         "A1": "Niederlande",
         "A2":"Italien",
         "A3":"Dänemark",
-        "correctAnswer":"A1"
+        "correctAnswer":"Niederlande",
+        "B":"Die Niederlande welches Land auch sonst dort ist die Umwelt ideal zum Fahrradfahren für jeden Fahrradliebhaber ein muss. In den Niederlanden gibt es mehr Fahrräder als Autos unglaublich!!",
+        "U":"images/a4.jpg",
+        "U1":"images/a44jpg.jpg"
     },
     {
         "F": "In welchem Land wurde das Fahrrad erfunden ?",
         "A1": "Frankreich",
         "A2": "China",
         "A3": "Deutschland",
-        "correctAnswer":"A3"
+        "correctAnswer":"Deutschland",
+         "B":"Die Erfindung des ersten Fahrrads. Obwohl es einige fragliche Beweise für die Existenz von Fahrrädern vor 1800 gibt, ist es eine weithin anerkannte Tatsache, dass das erste Fahrrad im Jahr 1817 von einem Herrn namens Baron Karl von Drais in Deutschland erfunden wurde.",
+         "U":"images/a5.jpg",
+         "U1":"images/a55.jpg"
     }
 ]
