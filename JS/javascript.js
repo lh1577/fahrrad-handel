@@ -132,15 +132,22 @@ function quizshow(a) {
         var a1 = document.createElement("button");
         var a1in = document.createTextNode(a[i].A1)
         a1.classList.add("buttonmain")
-        a1.onclick=antwert(a[i].FA3)
+        a1.onclick = function(event) {
+            antwert(event, a[i], a[i].A1);
+        };
         var a2 = document.createElement("button");
         var a2in = document.createTextNode(a[i].A2)
         a2.classList.add("buttonmain")
-        a2.onclick=antwert(a[i].FA3)
+        a2.onclick = function(event) {
+            antwert(event, a[i], a[i].A2);
+        };
         var a3 = document.createElement("button");
         var a3in = document.createTextNode(a[i].A3)
         a3.classList.add("buttonmain")
-        a3.onclick=antwert(a[i].FA3)
+        // a3.onclick=antwert(a[i].FA3)
+        a3.onclick = function(event) {
+            antwert(event, a[i], a[i].A3);
+        };
         a1.appendChild(a1in)
         a2.appendChild(a2in)
         a3.appendChild(a3in)
@@ -160,9 +167,14 @@ function quizshow(a) {
     buttt.appendChild(butttin)
     elem.appendChild(buttt)
 
+
 }
 
-function antwert(){
+function antwert(event, frage, selectedAnswer){
+    var eleme = document.getElementById("quizsite").innerHTML="";
+    if(frage.correctAnswer== selectedAnswer){
+        
+    }
     
 }
 
