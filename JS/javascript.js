@@ -1,3 +1,4 @@
+var x ;
 var cart = [];
 var cache = {};
 var quizda = 0;
@@ -312,7 +313,7 @@ function warenkorb(mouseEvent) {
             butin.classList.add("butin")
             butin.classList.add("fas","fa-trash-alt")
             butin.onclick = function(){
-                deletoneit(cart[i])
+                deletoneit()
             }
             var butin1 = document.createElement("button")
             var butinin1 = document.createTextNode("  Hinzufügen")
@@ -347,9 +348,9 @@ function warenkorb(mouseEvent) {
             
 
         }
-        function deletoneit(i) {
+        function deletoneit() {
             console.log(i)
-            delete cart[i]
+            cart.pop()
             document.getElementById("warenkorb").innerHTML="";
             createacart()
 
