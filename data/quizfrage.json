@@ -1,11 +1,54 @@
 [
-    {"F":"Wann wurde das Fahrrad erfunden ?",
-     "A1":"1817",
-     "A2":"1756",
-     "A3":"1832"},
-    {"F":"Wer gewann am meisten die Tour de France ?"},
-    {"F":"Welches Fahrrad sollte man benutzen wenn man im Gelände fährt ?"},
-    {"F":"Wo leben die Menschen die am meisten Fahrrad fahren ? "},
-    {"F":"In welchem Land wurde das Fahrrad erfunden ?"}
-
+    {
+        "F": "Wann wurde das Fahrrad erfunden ?",
+        "A1": "1817",
+        "A2": "1756",
+        "A3": "1832",
+        "FA1":1,
+        "FA2":2,
+        "FA3":3,
+        "RA":1
+        
+    },
+    {
+        "F": "Wer gewann   die Tour de France 2018 ?",
+        "A1":"Geraint Thomas",
+        "A2":"Peter Sagan",
+        "A3":"Chris Froome",
+        "FA1":1,
+        "FA2":2,
+        "FA3":3,
+        "RA":1
+        
+    },
+    {
+        "F": "Welches Fahrrad sollte man benutzen wenn man im Gelände fährt ?",
+        "A1": "Citybike",
+        "A2": "Mountainbike",
+        "A3": "Rennrad",
+        "FA1":1,
+        "FA2":2,
+        "FA3":3,
+        "RA":2
+    },
+    {
+        "F": "Wo leben die Menschen die am meisten Fahrrad fahren ? ",
+        "A1": "Niederlande",
+        "A2":"Italien",
+        "A3":"Dänemark",
+        "FA1":1,
+        "FA2":2,
+        "FA3":3,
+        "RA":1
+    },
+    {
+        "F": "In welchem Land wurde das Fahrrad erfunden ?",
+        "A1": "Frankreich",
+        "A2": "China",
+        "A3": "Deutschland",
+        "FA1":1,
+        "FA2":2,
+        "FA3":3,
+        "RA":3
+    }
 ]

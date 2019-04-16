@@ -213,3 +213,34 @@ th{
 .divclass{
     background-color:white;
 }
+.diva_{
+    background-color:yellowgreen;
+    display:flex;
+    height:50px;
+    
+    margin:12px;
+    padding:5px;
+    justify-content: center;
+    border-radius:12px;
+
+}
+.buttonmain{
+    background-color:slategray;
+    margin:10px;
+    padding:5px;
+    color:white;
+    height: 40px;
+    width:100px;
+    border-radius:12px;
+    border:none;
+    
+
+
+}
+.buttonmain:hover{
+    background-color:white;
+    color:slategrey;
+    margin:10px;
+    padding:5px;
+    border:2px solid slategray;
+}
