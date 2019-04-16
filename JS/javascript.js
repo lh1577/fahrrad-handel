@@ -267,6 +267,18 @@ function warenkorb(mouseEvent) {
         var dw = document.createElement("dic")
         var hw = document.createElement("h1")
         var hwin = document.createTextNode("Warenkorb")
+        var butin = document.createElement("button")
+        var butinin = document.createTextNode("Entfernen")
+        butin.appendChild(butinin)
+        hw.appendChild(butin)
+        butin.classList.add("butin")
+        butin.onclick=deletoneit;
+        var butin1 = document.createElement("button")
+        var butinin1 = document.createTextNode("Hinzufügen")
+        butin1.appendChild(butinin1)
+        butin1.classList.add("butin")
+        hw.appendChild(butin1)
+        butin1.onclick= plus;
         var tab = document.createElement("table")
         tab.classList.add("tab_")
         var trw = document.createElement("tr")
@@ -326,6 +338,14 @@ function warenkorb(mouseEvent) {
             trw1.appendChild(tdw4)
             trw1.appendChild(tdw3)
             tab.appendChild(trw1)
+        }
+        console.log(cart)
+        function deletoneit(){
+            cart.pop();
+
+        }
+        function plus(){
+            loadanypage(5);
         }
 
 

@@ -305,3 +305,13 @@ th{
     margin:20px;
 
 }
+.butin{
+    margin:12px;
+    padding:5px;
+    background-color:slategrey;
+    color:white;
+    border:none;
+    border-radius:12px;
+
+
+}
