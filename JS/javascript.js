@@ -111,17 +111,51 @@ function buttonclick(mouseEvent) {
         detailloaded(mouseEvent);
     })
 }
-function quizload(){
-    sendRequest("data/quizfrage.json",function(data){
+function quizload() {
+    sendRequest("data/quizfrage.json", function (data) {
         var loadquestion = JSON.parse(data)
-        document.getElementById("quizsite").innerHTML="";
+        document.getElementById("quizsite").innerHTML = "";
         quizshow(loadquestion)
         console.log("data found quizfrage")
     })
-    
+
 }
-function quizshow(a,b){
-    var elem = document.getElementById("quizsite");
+function quizshow(a) {
+    for (var i = 0; i < a.length; i++) {
+        var elem = document.getElementById("quizsite");
+        var fr = document.createElement("h1")
+        var frin = document.createTextNode(a[i].F)
+        var diva = document.createElement("div")
+        diva.classList.add("diva_")
+        var a1 = document.createElement("button");
+        var a1in = document.createTextNode(a[i].A1)
+        a1.classList.add("button_main")
+        a1.onclick=antwert()
+        var a2 = document.createElement("button");
+        var a2in = document.createTextNode(a[i].A2)
+        a2.classList.add("button_main")
+        a2.onclick=antwert()
+        var a3 = document.createElement("button");
+        var a3in = document.createTextNode(a[i].A3)
+        a3.classList.add("button_main")
+        a3.onclick=antwert()
+        a1.appendChild(a1in)
+        a2.appendChild(a2in)
+        a3.appendChild(a3in)
+        diva.appendChild(a1)
+        diva.appendChild(a2)
+        diva.appendChild(a3)
+
+
+        fr.appendChild(frin);
+        
+        elem.appendChild(fr)
+        elem.appendChild(diva)
+    }
+
+
+}
+function antwert(){
 
 }
 function detailloaded(mouseEvent) {
@@ -184,7 +218,7 @@ function warenkorb(mouseEvent) {
         trw.appendChild(thw2)
         trw.appendChild(thw4)
         trw.appendChild(thw3)
- 
+
         tab.appendChild(trw)
         elem.appendChild(dw)
         elem.appendChild(tab)
@@ -202,7 +236,7 @@ function warenkorb(mouseEvent) {
             var tdw3 = document.createElement("td")
 
             var tdw3in = document.createTextNode(cart[i].preis)
-            
+
             tdw1.appendChild(tdw1in)
             tdw2.appendChild(tdw2in)
             tdw3.appendChild(tdw3in)

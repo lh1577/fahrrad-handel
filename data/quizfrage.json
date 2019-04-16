@@ -1,11 +1,11 @@
 [
-    {"F1":"Wann wurde das Fahrrad erfunden ?",
+    {"F":"Wann wurde das Fahrrad erfunden ?",
      "A1":"1817",
      "A2":"1756",
      "A3":"1832"},
-    {"F2":"Wer gewann am meisten die Tour de France ?"},
-    {"F3":"Welches Fahrrad sollte man benutzen wenn man im Gelände fährt ?"},
-    {"F4":"Wo leben die Menschen die am meisten Fahrrad fahren ? "},
-    {"F5":"In welchem Land wurde das Fahrrad erfunden ?"}
+    {"F":"Wer gewann am meisten die Tour de France ?"},
+    {"F":"Welches Fahrrad sollte man benutzen wenn man im Gelände fährt ?"},
+    {"F":"Wo leben die Menschen die am meisten Fahrrad fahren ? "},
+    {"F":"In welchem Land wurde das Fahrrad erfunden ?"}
 
 ]
