@@ -267,7 +267,7 @@ th{
     color:white;
     border:none;
     border-radius:12px;
-    margin:12px;
+    margin:10px;
     padding:5px;
 }
 
@@ -286,4 +286,22 @@ th{
 }
 .ph1_wrong{
     background-color:red;
+}
+.mybut{
+    background-color:slategray;
+    color:white;
+    border-radius:12px;
+    border: 2px solid;
+    height:40px;
+    margin:20px;
+
+}
+.mybut:hover{
+    background-color:white;
+    color:slategray;
+    border-radius:12px;
+    border: 2px solid slategrey;
+    height:40px;
+    margin:20px;
+
 }
