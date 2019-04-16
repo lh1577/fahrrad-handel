@@ -260,23 +260,11 @@ function warenkorb(mouseEvent) {
         var inf = JSON.parse(data);
         createacart(inf)
     })
-    console.log("data found for cart")
+    
     function createacart(inf) {
         var dw = document.createElement("dic")
         var hw = document.createElement("h1")
         var hwin = document.createTextNode("Warenkorb")
-        var butin = document.createElement("button")
-        var butinin = document.createTextNode("Entfernen")
-        butin.appendChild(butinin)
-        hw.appendChild(butin)
-        butin.classList.add("butin")
-        butin.onclick = deletoneit;
-        var butin1 = document.createElement("button")
-        var butinin1 = document.createTextNode("Hinzufügen")
-        butin1.appendChild(butinin1)
-        butin1.classList.add("butin")
-        hw.appendChild(butin1)
-        butin1.onclick = plus;
         var tab = document.createElement("table")
         tab.classList.add("tab_")
         var trw = document.createElement("tr")
@@ -313,18 +301,26 @@ function warenkorb(mouseEvent) {
         elem.appendChild(tab)
 
         for (i = 0; i < cart.length; i++) {
-            console.log("loop active")
+            
             var trw1 = document.createElement("tr")
             var tdw1 = document.createElement("td")
             var tdw1in = document.createTextNode(cart[i].name)
             var tdw2 = document.createElement("td")
-            var buttd = document.createElement("button")
-            var buttdin = document.createTextNode("")
-            buttd.appendChild(buttdin)
-            buttd.classList.add("buttd")
-            buttd.classList.add("fas", "fa-trash-alt")
-            buttd.onclick=function(){
+            var butin = document.createElement("button")
+            var butinin = document.createTextNode("  Entfernen")
+            butin.appendChild(butinin)
+            butin.classList.add("butin")
+            butin.classList.add("fas","fa-trash-alt")
+            butin.onclick = function(){
                 deletoneit(cart[i])
+            }
+            var butin1 = document.createElement("button")
+            var butinin1 = document.createTextNode("  Hinzufügen")
+            butin1.appendChild(butinin1)
+            butin1.classList.add("butin")
+            butin1.classList.add("fas","fa-plus")
+            butin1.onclick=function(){
+                loadanypage(5);
             }
             var tdw2in = document.createTextNode(cart[i].beschreibung)
             var tdw4 = document.createElement("td")
@@ -335,7 +331,8 @@ function warenkorb(mouseEvent) {
             var tdw3in = document.createTextNode(cart[i].preis)
 
             tdw1.appendChild(tdw1in)
-            tdw1.appendChild(buttd)
+            tdw1.appendChild(butin)
+            tdw1.appendChild(butin1)
             tdw2.appendChild(tdw2in)
             tdw3.appendChild(tdw3in)
             tdw4.appendChild(tdw4in)
@@ -344,7 +341,6 @@ function warenkorb(mouseEvent) {
             trw1.appendChild(tdw4)
             trw1.appendChild(tdw3)
             tab.appendChild(trw1)
-            console.log(cart)
 
 
             
@@ -352,15 +348,12 @@ function warenkorb(mouseEvent) {
 
         }
         function deletoneit(i) {
-            console.log(cart)
+            console.log(i)
             delete cart[i]
             document.getElementById("warenkorb").innerHTML="";
             createacart()
 
     }
-        function plus() {
-            loadanypage(5);
-        }
 
 
 

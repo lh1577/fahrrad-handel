@@ -319,16 +319,20 @@ th{
     background-color:white;
     color:slategrey;
     border:2px solid white;
+    margin:12px;
+    padding:5px;
+    border-radius:12px;
 }
 .buttd{
     background-color:white;
     color:slategray;
     border-radius:12px;
-    text-align:center;
+    justify-content:center;
 
     width:20px;
     display:block;
-    margin:10px;
+    margin:12px;
     border:2px solid slategrey;
-    padding:10px;
+    padding:30px;
+    
 }
