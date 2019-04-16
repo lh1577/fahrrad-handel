@@ -201,4 +201,15 @@ th{
 .fiv{
     display:flex;
 }
-
+.flex_{
+    display:flex;
+}
+.par{
+    background-color:yellowgreen;
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:1.4em;
+}
+.divclass{
+    background-color:white;
+}
