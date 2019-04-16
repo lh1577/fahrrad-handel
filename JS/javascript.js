@@ -132,6 +132,9 @@ function quizshow(a) {
     var butttin = document.createTextNode("Beenden")
     buttt.classList.add("button_main")
     buttt.appendChild(butttin)
+    buttt.onclick= function() {
+        loadanypage(5);
+    };
     lastQuestion.appendChild(buttt)
 
     function createQuestion(a) {
@@ -140,6 +143,8 @@ function quizshow(a) {
         var frin = document.createTextNode(a.F)
         var diva = document.createElement("div")
         diva.classList.add("diva_")
+        var dil = document.createElement("div")
+        dil.classList.add("dil")
         var a1 = document.createElement("button");
         var a1in = document.createTextNode(a.A1)
         a1.classList.add("buttonmain")
@@ -167,18 +172,22 @@ function quizshow(a) {
         diva.appendChild(a1)
         diva.appendChild(a2)
         diva.appendChild(a3)
+        
 
 
         fr.appendChild(frin);
+        dil.appendChild(fr);
+        dil.appendChild(diva)
         
-        elem.appendChild(fr)
-        elem.appendChild(diva)
+        
+        
+        elem.appendChild(dil)
         return elem;
     }
 }
 
 function antwert(event, frage, selectedAnswer){
-    var eleme = document.getElementById("quizsite")
+    var eleme = document.getElementById("quiz")
     console.log(frage.correctAnswer)
     console.log(selectedAnswer)
     if(frage.correctAnswer==selectedAnswer){
@@ -225,7 +234,8 @@ function antwert(event, frage, selectedAnswer){
     
 }
 function closeantwert(){
-    var eleme = document.getElementById("pop").style.display="none";
+    document.getElementById("quiz").innerHTML="";
+    document.getElementsByClassName("dil").innerHTML="";
 }
 
 function detailloaded(mouseEvent) {
