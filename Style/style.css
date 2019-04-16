@@ -244,3 +244,27 @@ th{
     padding:5px;
     border:2px solid slategray;
 }
+.pop{
+    background-color:white;
+    position:absolute;
+    top:100px;
+    left:100px;
+    right:100px;
+    bottom:100px;
+
+
+}
+.divclass{
+    z-index:-1;
+}
+.pbut{
+    position:absolute;
+    bottom:0px;
+    right:0px;
+    background-color:slategrey;
+    color:white;
+    border:none;
+    border-radius:12px;
+    margin:12px;
+    padding:5px;
+}

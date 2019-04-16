@@ -123,30 +123,43 @@ function quizload() {
 
 }
 function quizshow(a) {
+    
+    var lastQuestion = null;
     for (var i = 0; i <a.length; i++) {
+        lastQuestion = createQuestion(a[i]);
+    }
+    var buttt = document.createElement("button")
+    var butttin = document.createTextNode("Beenden")
+    buttt.classList.add("button_main")
+    buttt.appendChild(butttin)
+    lastQuestion.appendChild(buttt)
+
+    function createQuestion(a) {
         var elem = document.getElementById("quizsite");
         var fr = document.createElement("h1")
-        var frin = document.createTextNode(a[i].F)
+        var frin = document.createTextNode(a.F)
         var diva = document.createElement("div")
         diva.classList.add("diva_")
         var a1 = document.createElement("button");
-        var a1in = document.createTextNode(a[i].A1)
+        var a1in = document.createTextNode(a.A1)
         a1.classList.add("buttonmain")
+        console.log(a.A1)
         a1.onclick = function(event) {
-            antwert(event, a[i], a[i].A1);
+            antwert(event, a, a.A1);
         };
         var a2 = document.createElement("button");
-        var a2in = document.createTextNode(a[i].A2)
+        var a2in = document.createTextNode(a.A2)
         a2.classList.add("buttonmain")
         a2.onclick = function(event) {
-            antwert(event, a[i], a[i].A2);
+            antwert(event, a, a.A2);
         };
         var a3 = document.createElement("button");
-        var a3in = document.createTextNode(a[i].A3)
+        var a3in = document.createTextNode(a.A3)
         a3.classList.add("buttonmain")
         // a3.onclick=antwert(a[i].FA3)
+
         a3.onclick = function(event) {
-            antwert(event, a[i], a[i].A3);
+            antwert(event, a, a.A3);
         };
         a1.appendChild(a1in)
         a2.appendChild(a2in)
@@ -160,22 +173,35 @@ function quizshow(a) {
         
         elem.appendChild(fr)
         elem.appendChild(diva)
+        return elem;
     }
-    var buttt = document.createElement("button")
-    var butttin = document.createTextNode("Beenden")
-    buttt.classList.add("button_main")
-    buttt.appendChild(butttin)
-    elem.appendChild(buttt)
-
-
 }
 
 function antwert(event, frage, selectedAnswer){
-    var eleme = document.getElementById("quizsite").innerHTML="";
-    if(frage.correctAnswer== selectedAnswer){
-        
+    var eleme = document.getElementById("quizsite")
+    console.log(frage.correctAnswer)
+    console.log(selectedAnswer)
+    if(frage.correctAnswer==selectedAnswer){
+        console.log("Richtig")
+        var pop = document.createElement("div")
+        pop.classList.add("pop")
+        var ph1 = document.createElement("h1")
+        var ph1in = document.createTextNode("Richtig!!!")
+        var pbut = document.createElement("button")
+        var pbutin = document.createTextNode("Schließen")
+        pbut.onclick=closeantwert
+        pbut.classList.add("pbut")
+        pbut.appendChild(pbutin)
+        ph1.appendChild(ph1in)
+        pop.appendChild(ph1)
+        pop.appendChild(pbut)
+        eleme.appendChild(pop);
+
     }
     
+}
+function closeantwert(){
+    var eleme = document.getElementById("pop").innerHTML="";
 }
 
 function detailloaded(mouseEvent) {
