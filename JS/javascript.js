@@ -116,23 +116,23 @@ function quizload() {
     sendRequest("data/quizfrage.json", function (data) {
         var loadquestion = JSON.parse(data)
         document.getElementById("quizsite").innerHTML = "";
-        
+
         console.log("data found quizfrage")
         quizshow(loadquestion)
     })
 
 }
 function quizshow(a) {
-    
+
     var lastQuestion = null;
-    for (var i = 0; i <a.length; i++) {
+    for (var i = 0; i < a.length; i++) {
         lastQuestion = createQuestion(a[i]);
     }
     var buttt = document.createElement("button")
     var butttin = document.createTextNode("Beenden")
     buttt.classList.add("button_main")
     buttt.appendChild(butttin)
-    buttt.onclick= function() {
+    buttt.onclick = function () {
         loadanypage(5);
     };
     lastQuestion.appendChild(buttt)
@@ -149,13 +149,13 @@ function quizshow(a) {
         var a1in = document.createTextNode(a.A1)
         a1.classList.add("buttonmain")
         console.log(a.A1)
-        a1.onclick = function(event) {
+        a1.onclick = function (event) {
             antwert(event, a, a.A1);
         };
         var a2 = document.createElement("button");
         var a2in = document.createTextNode(a.A2)
         a2.classList.add("buttonmain")
-        a2.onclick = function(event) {
+        a2.onclick = function (event) {
             antwert(event, a, a.A2);
         };
         var a3 = document.createElement("button");
@@ -163,7 +163,7 @@ function quizshow(a) {
         a3.classList.add("buttonmain")
         // a3.onclick=antwert(a[i].FA3)
 
-        a3.onclick = function(event) {
+        a3.onclick = function (event) {
             antwert(event, a, a.A3);
         };
         a1.appendChild(a1in)
@@ -172,25 +172,25 @@ function quizshow(a) {
         diva.appendChild(a1)
         diva.appendChild(a2)
         diva.appendChild(a3)
-        
+
 
 
         fr.appendChild(frin);
         dil.appendChild(fr);
         dil.appendChild(diva)
-        
-        
-        
+
+
+
         elem.appendChild(dil)
         return elem;
     }
 }
 
-function antwert(event, frage, selectedAnswer){
+function antwert(event, frage, selectedAnswer) {
     var eleme = document.getElementById("quiz")
     console.log(frage.correctAnswer)
     console.log(selectedAnswer)
-    if(frage.correctAnswer==selectedAnswer){
+    if (frage.correctAnswer == selectedAnswer) {
         console.log("Richtig")
         var ph1in = document.createTextNode("RICHTIG!!!")
         var ph1 = document.createElement("h1")
@@ -198,7 +198,7 @@ function antwert(event, frage, selectedAnswer){
 
 
     }
-    else{
+    else {
         var ph1in = document.createTextNode("FALSCH!!!")
         var ph1 = document.createElement("h1");
         ph1.classList.add("ph1_wrong")
@@ -214,11 +214,11 @@ function antwert(event, frage, selectedAnswer){
     var besin = document.createTextNode(frage.B)
     bes.classList.add("bes")
     var pim = document.createElement("img")
-    pim.src=frage.U
+    pim.src = frage.U
     var p1im = document.createElement("img")
-    p1im.src=frage.U1
+    p1im.src = frage.U1
     bes.appendChild(besin)
-    pbut.onclick=closeantwert
+    pbut.onclick = closeantwert
     pbut.classList.add("pbut")
     pbut.appendChild(pbutin)
     ph1.appendChild(ph1in)
@@ -231,11 +231,11 @@ function antwert(event, frage, selectedAnswer){
     pop.appendChild(pbut)
     pop.appendChild(bim)
     eleme.appendChild(pop);
-    
+
 }
-function closeantwert(){
-    document.getElementById("quiz").innerHTML="";
-    document.getElementsByClassName("dil").innerHTML="";
+function closeantwert() {
+    document.getElementById("quiz").innerHTML = "";
+    document.getElementsByClassName("dil").innerHTML = "";
 }
 
 function detailloaded(mouseEvent) {
@@ -272,13 +272,13 @@ function warenkorb(mouseEvent) {
         butin.appendChild(butinin)
         hw.appendChild(butin)
         butin.classList.add("butin")
-        butin.onclick=deletoneit;
+        butin.onclick = deletoneit;
         var butin1 = document.createElement("button")
         var butinin1 = document.createTextNode("Hinzufügen")
         butin1.appendChild(butinin1)
         butin1.classList.add("butin")
         hw.appendChild(butin1)
-        butin1.onclick= plus;
+        butin1.onclick = plus;
         var tab = document.createElement("table")
         tab.classList.add("tab_")
         var trw = document.createElement("tr")
@@ -340,11 +340,12 @@ function warenkorb(mouseEvent) {
             tab.appendChild(trw1)
         }
         console.log(cart)
-        function deletoneit(){
+        function deletoneit() {
             cart.pop();
 
+
         }
-        function plus(){
+        function plus() {
             loadanypage(5);
         }
 

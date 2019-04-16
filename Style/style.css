@@ -315,3 +315,8 @@ th{
 
 
 }
+.butin:hover{
+    background-color:white;
+    color:slategrey;
+    border:2px solid white;
+}
