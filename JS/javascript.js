@@ -118,12 +118,6 @@ function quizload(){
         quizshow(loadquestion)
         console.log("data found quizfrage")
     })
-    sendRequest("data/quizant.json",function(data){
-        var loadanswer = JSON.parse(data)
-        quizshow(loadanswer)
-        console.log("data found answer")
-
-    })
     
 }
 function quizshow(a,b){
