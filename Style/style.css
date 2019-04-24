@@ -23,7 +23,38 @@ h1 {
     text-align: center;
 
 }
+.diiic{
+    position:absolute;
+    z-index: inherit -1;
+    background-color:white;
+    margin:12px;
+    padding:5px;
+    top:100px;
+    left:100px;
+    right:100px;
+    bottom:100px;
+    height:500px;
+    border-radius:12px;
 
+
+}
+.divstart{
+    display:flex;
+}
+.buuut{
+    background-color:slategrey;
+    color:white;
+    border:none;
+    margin:12px;
+    padding:5px;
+    border-radius:12px;
+
+}
+.buuut:hover{
+    background-color:white;
+    color:slategrey;
+    border:solid 2px slategrey;
+}
 
 ul {
     background-color: slategrey;

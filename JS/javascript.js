@@ -2,6 +2,7 @@ var x;
 var cart = [];
 var cache = {};
 var quizda = 0;
+var richtigfrage = [];
 function sendRequest(url, callback) {
     if (cache[url] == null) {
         var xhttp = new XMLHttpRequest();
@@ -134,7 +135,7 @@ function quizshow(a) {
     buttt.classList.add("button_main")
     buttt.appendChild(butttin)
     buttt.onclick = function () {
-        loadanypage(5);
+        showresult()
     };
     lastQuestion.appendChild(buttt)
 
@@ -196,6 +197,7 @@ function antwert(event, frage, selectedAnswer) {
         var ph1in = document.createTextNode("RICHTIG!!!")
         var ph1 = document.createElement("h1")
         ph1.classList.add("ph1_correct")
+        richtigfrage.push(1);
 
 
     }
@@ -219,8 +221,12 @@ function antwert(event, frage, selectedAnswer) {
     var p1im = document.createElement("img")
     p1im.src = frage.U1
     bes.appendChild(besin)
-    pbut.onclick = closeantwert
+    pbut.onclick = closeantwert;
     pbut.classList.add("pbut")
+    console.log(frage)
+    var par = document.createElement("p")
+    var parin = document.createTextNode(richtigfrage.length+" von 5 Fragen Richtig!!")
+    par.appendChild(parin);
     pbut.appendChild(pbutin)
     ph1.appendChild(ph1in)
     bim.appendChild(bes)
@@ -231,6 +237,7 @@ function antwert(event, frage, selectedAnswer) {
     pop.appendChild(ph1)
     pop.appendChild(pbut)
     pop.appendChild(bim)
+    pop.appendChild(par)
     eleme.appendChild(pop);
 
 }
@@ -238,7 +245,28 @@ function closeantwert() {
     document.getElementById("quiz").innerHTML = "";
     document.getElementsByClassName("dil").innerHTML = "";
 }
+function showresult(){
+    var elemem = document.getElementById("quiz");
+    var dic = document.createElement("div")
+    dic.classList.add("diiic")
+    var head1 = document.createElement("h1");
+    var head1in = document.createTextNode("Das Resultat")
+    var but = document.createElement("button");
+    but.classList.add("buuut")
+    var butin = document.createTextNode("Startseite")
+    but.appendChild(butin)
+    but.onclick= function(){
+        loadanypage(5);
+    }
 
+
+    head1.appendChild(head1in);
+    dic.appendChild(head1);
+    dic.appendChild(but)
+    elemem.appendChild(dic);
+
+
+}
 function detailloaded(mouseEvent) {
     sendRequest("fahrraeder/artikelNr" + mouseEvent.target.artikelNr + ".json", function (data) {
         var loadartikel = JSON.parse(data);
@@ -350,7 +378,8 @@ function warenkorb(mouseEvent) {
 
 
         }
-        function deletoneit() {
+        function deletoneit(a) {
+            cart.pop(a)
             document.getElementById("warenkorb").innerHTML = "";
             createacart();
            
