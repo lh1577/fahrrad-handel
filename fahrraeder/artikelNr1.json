@@ -2,9 +2,9 @@
     "artikelNr": 0,
     "name": "Mountain Bike ",
     "beschreibung": "Lol",
-    "preis": 599.99,
+    "preis": "899.99 $",
     "imageUrl": "images/i.jpg",
-    "groesse": 9,
-    "gewicht": 5,
-    "hersteller": "asdasd"
+    "groesse": "27 zoll",
+    "gewicht": "1.4 kg",
+    "hersteller": "Rennsport4You"
 }

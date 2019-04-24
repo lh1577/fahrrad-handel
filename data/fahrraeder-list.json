@@ -1,26 +1,26 @@
 [{
     "artikelNr": 1,
-    "name": "Fahrrad 1",
-    "beschreibung": "Das hier ist ein sehr tolles fahhrad!",
-    "preis": 599.99,
+    "name": "Rennrad SpoileGT",
+    "beschreibung": "Mit diesem Fahrrad werden sie jedes Rennen gewinnen",
+    "preis": "899.99 $",
     "imageUrl": "images/i.jpg"
 }, {
     "artikelNr": 2,
-    "name": "Fahrrad 2",
-    "beschreibung": "Das hier ist ein sehr tolles fahhrad!",
-    "preis": 599.99,
+    "name": "Citycruiser 3D",
+    "beschreibung": "Damit sind Sie in der Stadt der hingucker.GARANTIERT!",
+    "preis": "499.99 $",
     "imageUrl": "images/ii.jpg"
 }, {
     "artikelNr": 3,
-    "name": "Fahrrad 3",
-    "beschreibung": "Das hier ist ein sehr tolles  fahrad",
-    "preis": 599.99,
+    "name": "Imnotold 5",
+    "beschreibung": "Sie denken das ist ein altes Fahrrad ? Falsch!",
+    "preis": "399.99 $",
     "imageUrl": "images/iii.jpg"
 },{
     "artikelNr": 4,
-    "name": "Fahrrad 4",
-    "beschreibung": "Das hier ist ein sehr tolles  fahrad !!!",
-    "preis": 899.99,
+    "name": "Flowerpot X",
+    "beschreibung": "Sie haben immer Blumen dabei wer sagt da nein ?!",
+    "preis": "999.99 $",
     "imageUrl": "images/iiii.jpg"
 
 },{

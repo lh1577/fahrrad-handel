@@ -50,5 +50,15 @@
          "B":"Die Erfindung des ersten Fahrrads. Obwohl es einige fragliche Beweise für die Existenz von Fahrrädern vor 1800 gibt, ist es eine weithin anerkannte Tatsache, dass das erste Fahrrad im Jahr 1817 von einem Herrn namens Baron Karl von Drais in Deutschland erfunden wurde.",
          "U":"images/a5.jpg",
          "U1":"images/a55.jpg"
+    },{
+        "F": "6 Wie teuer ist das teuerste Fahrrad ?",
+        "A1": "800.000 $",
+        "A2": "500.000 $",
+        "A3": "1.000.000 $",
+        "correctAnswer":"500.000 $",
+         "B":"Das teuerste Rad aller Zeiten stammt vom ehemals erfolgreichsten Radsportler Lance Armstrong. Er benutzte das von Damien Hirst designte Modell bei der Tour de France 2009. Auf einer Wohltätigkeitsaktion wurde das Damien Hirst (Butterfly) Trek Madone zu einem Preis von 500.000 Dollar verkauft.",
+         "U":"images/o1.jpg",
+         "U1":"images/o2.jpg"
+        
     }
 ]

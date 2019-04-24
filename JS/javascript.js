@@ -227,9 +227,8 @@ function antwert(event, frage, selectedAnswer) {
     pbut.onclick = closeantwert;
     pbut.classList.add("pbut")
     console.log(frage)
-    var par = document.createElement("p")
-    var parin = document.createTextNode(richtigfrage.length + " von 5 Fragen Richtig!!")
-    par.appendChild(parin);
+
+   
     pbut.appendChild(pbutin)
     ph1.appendChild(ph1in)
     bim.appendChild(bes)
@@ -240,7 +239,7 @@ function antwert(event, frage, selectedAnswer) {
     pop.appendChild(ph1)
     pop.appendChild(pbut)
     pop.appendChild(bim)
-    pop.appendChild(par)
+
     eleme.appendChild(pop);
 
 }
@@ -285,14 +284,18 @@ function showresult() {
         p.appendChild(pin);
     }
     if (richtigfrage.length == 3) {
-        var pin = document.createTextNode("Wow sie haben " + richtigfrage.length + " Fragen Richtig beantwortet. Mit einer Punktzahle von " + richtigfrage.length + "  liegen sie fast über Durschnitt. Sie können stolz sein!!")
+        var pin = document.createTextNode("Wow sie haben " + richtigfrage.length + " Fragen Richtig beantwortet. Mit einer Punktzahle von " + richtigfrage.length + "  liegen sie im Durschnitt. Sie haben ein gutes Allgemeinwissen !!")
         p.appendChild(pin);
     }
     if (richtigfrage.length == 4) {
-        var pin = document.createTextNode("Wow sie haben " + richtigfrage.length + " Fragen Richtig beantwortet. Mit einer Punktzahle von " + richtigfrage.length + "  liegen über dem Durschnitt. Da kennt sich aber jemand aus !!")
+        var pin = document.createTextNode("Wow sie haben " + richtigfrage.length + " Fragen Richtig beantwortet. Mit einer Punktzahle von " + richtigfrage.length + "  liegen sie fast über dem Durschnitt. Sie können stolz sein!!")
         p.appendChild(pin);
     }
     if (richtigfrage.length == 5) {
+        var pin = document.createTextNode("Wow sie haben " + richtigfrage.length + " Fragen Richtig beantwortet. Mit einer Punktzahle von " + richtigfrage.length + "  liegen über dem Durschnitt. Da kennt sich aber jemand aus !!")
+        p.appendChild(pin);
+    }
+    if (richtigfrage.length == 6) {
         var pin = document.createTextNode("Wow sie haben " + richtigfrage.length + " Fragen Richtig beantwortet. Mit einer Punktzahle von " + richtigfrage.length + "  liegen deutlich über dem Durschnitt. Vor dem Computer sitzt wohl ein Fahrradexperte (oder eine Person mit viel Glück).!!")
         p.appendChild(pin);
     }
