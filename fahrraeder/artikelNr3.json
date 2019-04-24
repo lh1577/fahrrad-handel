@@ -1,11 +1,11 @@
 {
 "artikelNr": 2,
-"name": "Fahrrad 3",
-"beschreibung": "Das hier ist ein sehr tolles  fahrad",
-"preis": 599.99,
+"name": "Imnotold 5",
+"beschreibung": "Sie denken das ist ein altes Fahrrad ? Falsch! Es sieht nur so aus !",
+"preis": "399.99 $",
 "imageUrl": "images/iii.jpg",
-"groesse": 5,
-"gewicht": 4,
-"hersteller": "Cube"
+"groesse": "27 Zoll",
+"gewicht": "4 kg",
+"hersteller": "We-want-money"
 
 }

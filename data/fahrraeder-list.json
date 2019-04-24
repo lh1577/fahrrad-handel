@@ -25,39 +25,39 @@
 
 },{
     "artikelNr": 5,
-    "name": "Fahrrad 5",
-    "beschreibung": "Das hier ist ein sehr tolles  fahrad",
-    "preis": 899.99,
+    "name": "Freshfahrrad",
+    "beschreibung": "Dieses Fahrrad wird sicherlich nicht dreckig",
+    "preis": "599.99 $",
     "imageUrl": "images/5i.jpg"
 
 },{
     "artikelNr": 6,
-    "name": "Fahrrad 6",
-    "beschreibung": "Das hier ist ein sehr tolles  fahrad",
-    "preis": 999.99,
+    "name": "Blueandyellow",
+    "beschreibung": "Können Sie sich nicht entscheiden zwichen 2 Farben? Hier ist die Lösung!",
+    "preis": "999.99 $",
     "imageUrl": "images/6i.jpg"
 },{
     "artikelNr": 7,
-    "name": "Fahrrad 7",
-    "beschreibung": "Das hier ist ein sehr tolles  fahrad",
-    "preis": 999.99,
+    "name": "Tandemator",
+    "beschreibung": "Fakt: Sie können sich ausruhen und ein anderer macht die ganze Arbeit!!",
+    "preis": "999.99 $",
     "imageUrl": "images/7i.jpg"
 },{
     "artikelNr": 8,
-    "name": "Fahrrad 8",
-    "beschreibung": "Das hier ist ein sehr tolles  fahrad",
-    "preis": 999.99,
+    "name": "Forestjump",
+    "beschreibung": "Mit diesem Fahrrad sind sie besonders schnell unterwegs!",
+    "preis": "1.999.99 $",
     "imageUrl": "images/8i.jpg"
 },{
     "artikelNr": 9,
-    "name": "Fahrrad 9",
-    "beschreibung": "Das hier ist ein sehr tolles  fahrad",
-    "preis": 999.99,
+    "name": "Quicks 49",
+    "beschreibung": "Nur was für harte Bruschen Qualität für 99.9 $ TOP",
+    "preis": "99.99 $",
     "imageUrl": "images/9i.jpg"
 },{
     "artikelNr": 10,
-    "name": "Fahrrad 10",
-    "beschreibung": "Das hier ist ein sehr tolles  fahrad",
-    "preis": 999.99,
+    "name": "Uncreativ A3",
+    "beschreibung": "Erschrecken sie alle Tiere im Wald!",
+    "preis": "799.99 $",
     "imageUrl": "images/10i.jpg"
 }]

@@ -1,11 +1,11 @@
 {
     "artikelNr": 4,
-    "name": "Fahrrad 5",
-    "beschreibung": "Das hier ist ein sehr tolles  fahrad",
-    "preis": 899.99,
+    "name": "Freshfahrrad",
+    "beschreibung": "Dieses Fahrrad wird sicherlich nicht dreckig",
+    "preis": "599.99 $",
     "imageUrl": "images/5i.jpg",
-    "groesse": 5,
-    "gewicht": 3.5,
-    "hersteller": "Carver"
+    "groesse":"27 Zoll",
+    "gewicht": "3 kg",
+    "hersteller": "Fantastict0"
 
 }

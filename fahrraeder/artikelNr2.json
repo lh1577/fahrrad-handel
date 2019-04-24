@@ -1,10 +1,10 @@
 {
     "artikelNr": 1,
-    "name": "Mountain Bike ",
-    "beschreibung": "Das hier ist ein sehr tolles fahhrad!",
-    "preis": 599.99,
+    "name": "Citycruiser 3D",
+    "beschreibung": "Damit sind Sie in der Stadt der hingucker.GARANTIERT!",
+    "preis": "499.99 $",
     "imageUrl": "images/ii.jpg",
-    "groesse": 3,
-    "gewicht": 5,
-    "hersteller": "asdasd"
+    "groesse": "27 Zoll",
+    "gewicht": "2.6 kg",
+    "hersteller": "Citywatch"
 }

@@ -1,10 +1,10 @@
 {
     "artikelNr": 3,
-    "name": "Fahrrad 4",
-    "beschreibung": "Das hier ist ein sehr tolles  fahrad",
-    "preis": 899.99,
+    "name": "Flowerpot X" ,
+    "beschreibung": "Sie haben immer Blumen dabei wer sagt da nein ?!",
+    "preis": "999.99 $",
     "imageUrl": "images/iiii.jpg",
-    "groesse": 5,
-    "gewicht": 4,
-    "hersteller": "Cube"
+    "groesse": "28 Zoll",
+    "gewicht": "9 kg",
+    "hersteller": "savetheworld"
 }
