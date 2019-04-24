@@ -268,8 +268,13 @@ function showresult() {
     var butin = document.createTextNode("Startseite")
     but.appendChild(butin)
     but.onclick = function () {
+        
+        console.log(richtigfrage)
+        y = 0;
+        console.log(richtigfrage)
         loadanypage(5);
     }
+    
 
     var p = document.createElement("p");
     p.classList.add("respa")
