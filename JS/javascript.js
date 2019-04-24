@@ -149,7 +149,7 @@ function quizshow(a) {
         var a1 = document.createElement("button");
         var a1in = document.createTextNode(a.A1)
         a1.classList.add("buttonmain")
-        console.log(a.A1)
+        
         a1.onclick = function (event) {
             antwert(event, a, a.A1);
         };
@@ -312,8 +312,9 @@ function warenkorb(mouseEvent) {
             butin.appendChild(butinin)
             butin.classList.add("butin")
             butin.classList.add("fas","fa-trash-alt")
-            butin.onclick = function(){
-                deletoneit()
+            var a = i;
+            butin.onclick = function(   ){
+                deletoneit(a,mouseEvent);
             }
             var butin1 = document.createElement("button")
             var butinin1 = document.createTextNode("  Hinzufügen")
@@ -349,10 +350,14 @@ function warenkorb(mouseEvent) {
 
         }
         function deletoneit() {
-            console.log(i)
-            cart.pop()
+            console.log("function wurde aufgerufen")
+            console.log(a)
+            delete cart[a];
             document.getElementById("warenkorb").innerHTML="";
+            console.log(cart)
             createacart()
+            
+           
 
     }
 
