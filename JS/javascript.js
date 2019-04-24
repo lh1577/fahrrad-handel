@@ -1,8 +1,10 @@
+var y = 0;
 var x;
 var cart = [];
 var cache = {};
 var quizda = 0;
 var richtigfrage = [];
+var quizes = []
 function sendRequest(url, callback) {
     if (cache[url] == null) {
         var xhttp = new XMLHttpRequest();
@@ -121,28 +123,25 @@ function quizload() {
     sendRequest("data/quizfrage.json", function (data) {
         var loadquestion = JSON.parse(data)
         document.getElementById("quizsite").innerHTML = "";
+        quizes.push(loadquestion)
+        
+        console.log(quizes)
 
         console.log("data found quizfrage")
         quizshow(loadquestion)
+
+
     })
 
 }
 function quizshow(a) {
 
     var lastQuestion = null;
-    for (var i = 0; i < a.length; i++) {
+    for (var i = y; i < a.length; i++) {
         lastQuestion = createQuestion(a[i]);
     }
-    var buttt = document.createElement("button")
-    var butttain = document.createTextNode("Beenden")
-  
 
-    buttt.classList.add("button_main")
-    buttt.appendChild(butttain)
-    buttt.onclick = function () {
-        showresult()
-    };
-    lastQuestion.appendChild(buttt)
+   
 
     function createQuestion(a) {
         var elem = document.getElementById("quizsite");
@@ -246,8 +245,11 @@ function antwert(event, frage, selectedAnswer) {
 
 }
 function closeantwert() {
+    y++
     document.getElementById("quiz").innerHTML = "";
     document.getElementsByClassName("dil").innerHTML = "";
+    quizload()
+    
 }
 function showresult() {
 
@@ -274,7 +276,7 @@ function showresult() {
     head1.appendChild(head1in);
     dic.appendChild(head1);
     if (richtigfrage.length == 0) {
-        var pin = document.createTextNode("Wow sie haben " + richtigfrage.length + " Fragen Richtig beantwortet. Mit einer Punktzahle von " + richtigfrage.length + "  liegen sie nicht im Durschnitt. Sie sollten ihr Allgemeinwissen auffrischen!!")
+        var pin = document.createTextNode("Wow sie haben " + richtigfrage.length + " Fragen Richtig beantwortet. Mit einer Punktzahle von " + richtigfrage.length + "  sind sie besonders schlecht. Sie sollten ihr Allgemeinwissen auffrischen!!")
         p.appendChild(pin);
     }
     if (richtigfrage.length == 1) {
@@ -282,23 +284,39 @@ function showresult() {
         p.appendChild(pin);
     }
     if (richtigfrage.length == 2) {
-        var pin = document.createTextNode("Wow sie haben " + richtigfrage.length + " Fragen Richtig beantwortet. Mit einer Punktzahle von " + richtigfrage.length + "  liegen sie fast im Durschnitt. Sie haben ein gutes Allgemeinwissen !!")
+        var pin = document.createTextNode("Wow sie haben " + richtigfrage.length + " Fragen Richtig beantwortet. Mit einer Punktzahle von " + richtigfrage.length + "  liegen sie nicht im Durschnitt. Sie sollten ihr Allgemeinwissen auffrischen!!")
         p.appendChild(pin);
     }
     if (richtigfrage.length == 3) {
-        var pin = document.createTextNode("Wow sie haben " + richtigfrage.length + " Fragen Richtig beantwortet. Mit einer Punktzahle von " + richtigfrage.length + "  liegen sie im Durschnitt. Sie haben ein gutes Allgemeinwissen !!")
+        var pin = document.createTextNode("Wow sie haben " + richtigfrage.length + " Fragen Richtig beantwortet. Mit einer Punktzahle von " + richtigfrage.length + "  liegen sie nicht im Durschnitt. Sie sollten ihr Allgemeinwissen auffrischen!!")
         p.appendChild(pin);
     }
     if (richtigfrage.length == 4) {
-        var pin = document.createTextNode("Wow sie haben " + richtigfrage.length + " Fragen Richtig beantwortet. Mit einer Punktzahle von " + richtigfrage.length + "  liegen sie fast über dem Durschnitt. Sie können stolz sein!!")
+        var pin = document.createTextNode("Wow sie haben " + richtigfrage.length + " Fragen Richtig beantwortet. Mit einer Punktzahle von " + richtigfrage.length + "  liegen sie fast Durschnitt. Sie können stolz sein!!")
         p.appendChild(pin);
     }
     if (richtigfrage.length == 5) {
-        var pin = document.createTextNode("Wow sie haben " + richtigfrage.length + " Fragen Richtig beantwortet. Mit einer Punktzahle von " + richtigfrage.length + "  liegen über dem Durschnitt. Da kennt sich aber jemand aus !!")
+        var pin = document.createTextNode("Wow sie haben " + richtigfrage.length + " Fragen Richtig beantwortet. Mit einer Punktzahle von " + richtigfrage.length + "  liegen sie im Durschnitt. Sie können stolz sein !!")
         p.appendChild(pin);
     }
     if (richtigfrage.length == 6) {
-        var pin = document.createTextNode("Wow sie haben " + richtigfrage.length + " Fragen Richtig beantwortet. Mit einer Punktzahle von " + richtigfrage.length + "  liegen deutlich über dem Durschnitt. Vor dem Computer sitzt wohl ein Fahrradexperte (oder eine Person mit viel Glück).!!")
+        var pin = document.createTextNode("Wow sie haben " + richtigfrage.length + " Fragen Richtig beantwortet. Mit einer Punktzahle von " + richtigfrage.length + "  liegen sie knapp über dem Durschnitt.Sie haben ein gutes Allgemeinwissen !!") 
+        p.appendChild(pin);
+    }
+    if (richtigfrage.length == 7) {
+        var pin = document.createTextNode("Wow sie haben " + richtigfrage.length + " Fragen Richtig beantwortet. Mit einer Punktzahle von " + richtigfrage.length + "  liegen sie etwas über dem Durschnitt.Sie heben sich von den anderen ab .!!")
+        p.appendChild(pin);
+    }
+    if (richtigfrage.length == 8) {
+        var pin = document.createTextNode("Wow sie haben " + richtigfrage.length + " Fragen Richtig beantwortet. Mit einer Punktzahle von " + richtigfrage.length + "  liegen sie deutlich über dem Durschnitt. Respekt ihre Punktzahle erreichen nur sehr wenige Personen.!!")
+        p.appendChild(pin);
+    }
+    if (richtigfrage.length == 9) {
+        var pin = document.createTextNode("Wow sie haben " + richtigfrage.length + " Fragen Richtig beantwortet. Mit einer Punktzahle von " + richtigfrage.length + "  liegen sie deutlich über dem Durschnitt. Da kennt sich aber jemand sehr gut aus.!!")
+        p.appendChild(pin);
+    }
+    if (richtigfrage.length == 10) {
+        var pin = document.createTextNode("Wow sie haben " + richtigfrage.length + " Fragen Richtig beantwortet. Mit einer Punktzahle von " + richtigfrage.length + "  liegen sie deutlich über dem Durschnitt. Vor dem Computer sitzt wohl ein Fahrradexperte (oder eine Person mit viel Glück).!!")
         p.appendChild(pin);
     }
 

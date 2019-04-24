@@ -4,105 +4,99 @@
         "A1": "1817",
         "A2": "1756",
         "A3": "1832",
-        "correctAnswer":"1817",
-        "B":"Die Erfindung des ersten Fahrrads. Obwohl es einige fragliche Beweise für die Existenz von Fahrrädern vor 1800 gibt, ist es eine weithin anerkannte Tatsache, dass das erste Fahrrad im Jahr 1817 von einem Herrn namens Baron Karl von Drais erfunden wurde.",
-        "U":"images/a1.jpg",
-        "U1":"images/a11.jpg"
+        "correctAnswer": "1817",
+        "B": "Die Erfindung des ersten Fahrrads. Obwohl es einige fragliche Beweise für die Existenz von Fahrrädern vor 1800 gibt, ist es eine weithin anerkannte Tatsache, dass das erste Fahrrad im Jahr 1817 von einem Herrn namens Baron Karl von Drais erfunden wurde.",
+        "U": "images/a1.jpg",
+        "U1": "images/a11.jpg"
     },
     {
         "F": " 2 Wer gewann   die Tour de France 2018 ?",
-        "A1":"Geraint Thomas",
-        "A2":"Peter Sagan",
-        "A3":"Chris Froome",
-        "correctAnswer":"Geraint Thomas",
-        "B":"Geraint Howell Thomas, OBE, Spitzname „G“, ist ein britischer Bahn- und Straßenradrennfahrer aus Wales. Er wurde zweifacher Olympiasieger und dreifacher Weltmeister in der Mannschaftsverfolgung und gewann die Tour de France 2018.",
-        "U":"images/a22.jpg",
-        "U1":"images/a2.jpg"
-        
+        "A1": "Geraint Thomas",
+        "A2": "Peter Sagan",
+        "A3": "Chris Froome",
+        "correctAnswer": "Geraint Thomas",
+        "B": "Geraint Howell Thomas, OBE, Spitzname „G“, ist ein britischer Bahn- und Straßenradrennfahrer aus Wales. Er wurde zweifacher Olympiasieger und dreifacher Weltmeister in der Mannschaftsverfolgung und gewann die Tour de France 2018.",
+        "U": "images/a22.jpg",
+        "U1": "images/a2.jpg"
     },
     {
         "F": "3 Welches Fahrrad sollte man benutzen wenn man im Gelände fährt ?",
         "A1": "Citybike",
         "A2": "Mountainbike",
         "A3": "Rennrad",
-        "correctAnswer":"Mountainbike",
-        "B":"Ein Mountainbike oder Geländefahrrad ist ein Fahrrad, das besonders auf den Einsatz abseits befestigter Straßen ausgerichtet ist",
-        "U":"images/a3jpg.jpg",
-        "U1":"images/33.jpg"
-
+        "correctAnswer": "Mountainbike",
+        "B": "Ein Mountainbike oder Geländefahrrad ist ein Fahrrad, das besonders auf den Einsatz abseits befestigter Straßen ausgerichtet ist",
+        "U": "images/a3jpg.jpg",
+        "U1": "images/33.jpg"
     },
     {
         "F": " 4 Wo leben die Menschen die am meisten Fahrrad fahren ? ",
         "A1": "Niederlande",
-        "A2":"Italien",
-        "A3":"Dänemark",
-        "correctAnswer":"Niederlande",
-        "B":"Die Niederlande welches Land auch sonst dort ist die Umwelt ideal zum Fahrradfahren für jeden Fahrradliebhaber ein muss. In den Niederlanden gibt es mehr Fahrräder als Autos unglaublich!!",
-        "U":"images/a4.jpg",
-        "U1":"images/a44jpg.jpg"
+        "A2": "Italien",
+        "A3": "Dänemark",
+        "correctAnswer": "Niederlande",
+        "B": "Die Niederlande welches Land auch sonst dort ist die Umwelt ideal zum Fahrradfahren für jeden Fahrradliebhaber ein muss. In den Niederlanden gibt es mehr Fahrräder als Autos unglaublich!!",
+        "U": "images/a4.jpg",
+        "U1": "images/a44jpg.jpg"
     },
     {
         "F": " 5 In welchem Land wurde das Fahrrad erfunden ?",
         "A1": "Frankreich",
         "A2": "China",
         "A3": "Deutschland",
-        "correctAnswer":"Deutschland",
-         "B":"Die Erfindung des ersten Fahrrads. Obwohl es einige fragliche Beweise für die Existenz von Fahrrädern vor 1800 gibt, ist es eine weithin anerkannte Tatsache, dass das erste Fahrrad im Jahr 1817 von einem Herrn namens Baron Karl von Drais in Deutschland erfunden wurde.",
-         "U":"images/a5.jpg",
-         "U1":"images/a55.jpg"
-    },{
+        "correctAnswer": "Deutschland",
+        "B": "Die Erfindung des ersten Fahrrads. Obwohl es einige fragliche Beweise für die Existenz von Fahrrädern vor 1800 gibt, ist es eine weithin anerkannte Tatsache, dass das erste Fahrrad im Jahr 1817 von einem Herrn namens Baron Karl von Drais in Deutschland erfunden wurde.",
+        "U": "images/a5.jpg",
+        "U1": "images/a55.jpg"
+    },
+    {
         "F": "6 Wie teuer ist das teuerste Fahrrad ?",
         "A1": "800.000 $",
         "A2": "500.000 $",
         "A3": "1.000.000 $",
-        "correctAnswer":"500.000 $",
-         "B":"Das teuerste Rad aller Zeiten stammt vom ehemals erfolgreichsten Radsportler Lance Armstrong. Er benutzte das von Damien Hirst designte Modell bei der Tour de France 2009. Auf einer Wohltätigkeitsaktion wurde das Damien Hirst (Butterfly) Trek Madone zu einem Preis von 500.000 Dollar verkauft.",
-         "U":"images/o1.jpg",
-         "U1":"images/o2.jpg"
-        
-    }
-    ,{
+        "correctAnswer": "500.000 $",
+        "B": "Das teuerste Rad aller Zeiten stammt vom ehemals erfolgreichsten Radsportler Lance Armstrong. Er benutzte das von Damien Hirst designte Modell bei der Tour de France 2009. Auf einer Wohltätigkeitsaktion wurde das Damien Hirst (Butterfly) Trek Madone zu einem Preis von 500.000 Dollar verkauft.",
+        "U": "images/o1.jpg",
+        "U1": "images/o2.jpg"
+    },
+    {
         "F": "7 Was war die größte Distanz die jemals jemand mit einem Fahrrad gefahren ist?",
         "A1": "20.565 km",
         "A2": "94.489 km",
         "A3": "120.805 km",
-        "correctAnswer":"120.805 km",
-         "B":" 120.805 Kilometer! Das ist so weit wie in einem Jahr dreimal am Äquator um die Erde radeln. Oder 25-mal quer durch die USA. Oder täglich 331 Kilometer. Von Hamburg nach Hannover, noch 15 Kilometer weiter und gleich wieder zurück bis Hamburg. Jeden Tag. Ein ganzes Jahr.",
-         "U":"images/ü1.jpg",
-         "U1":"images/D1.jpg"
-        
-    }
-    ,{
+        "correctAnswer": "120.805 km",
+        "B": " 120.805 Kilometer! Das ist so weit wie in einem Jahr dreimal am Äquator um die Erde radeln. Oder 25-mal quer durch die USA. Oder täglich 331 Kilometer. Von Hamburg nach Hannover, noch 15 Kilometer weiter und gleich wieder zurück bis Hamburg. Jeden Tag. Ein ganzes Jahr.",
+        "U": "images/ü1.jpg",
+        "U1": "images/D1.jpg"
+    },
+    {
         "F": "8 Wie schnell war das schnellste Fahrrad der Welt?",
-        "A1": "114 km/h",
+        "A1": "144 km/h",
         "A2": "209 km/h",
         "A3": "156 km/h",
-        "correctAnswer":"500.000 $",
-         "B":"Das schnellste Fahrrad der Welt. 144,17 km/h: Das ist der neue Rekord für ein muskelbetriebenes Fahrzeug. So schnell fuhr jetzt der Kanadier Todd Reichert bei der World Human Powered Speed Challenge in Nevada.",
-         "U":"images/al1.jpg",
-         "U1":"images/ali22.jpg"
-        
-    }
-    ,{
-        "F": "9 Wie teuer ist das teuerste Fahrrad ?",
-        "A1": "800.000 $",
-        "A2": "500.000 $",
-        "A3": "1.000.000 $",
-        "correctAnswer":"500.000 $",
-         "B":"Das teuerste Rad aller Zeiten stammt vom ehemals erfolgreichsten Radsportler Lance Armstrong. Er benutzte das von Damien Hirst designte Modell bei der Tour de France 2009. Auf einer Wohltätigkeitsaktion wurde das Damien Hirst (Butterfly) Trek Madone zu einem Preis von 500.000 Dollar verkauft.",
-         "U":"images/o1.jpg",
-         "U1":"images/o2.jpg"
-        
-    }
-    ,{
-        "F": "10 Wie teuer ist das teuerste Fahrrad ?",
-        "A1": "800.000 $",
-        "A2": "500.000 $",
-        "A3": "1.000.000 $",
-        "correctAnswer":"500.000 $",
-         "B":"Das teuerste Rad aller Zeiten stammt vom ehemals erfolgreichsten Radsportler Lance Armstrong. Er benutzte das von Damien Hirst designte Modell bei der Tour de France 2009. Auf einer Wohltätigkeitsaktion wurde das Damien Hirst (Butterfly) Trek Madone zu einem Preis von 500.000 Dollar verkauft.",
-         "U":"images/o1.jpg",
-         "U1":"images/o2.jpg"
-        
+        "correctAnswer": "144 km/h",
+        "B": "Das schnellste Fahrrad der Welt. 144,17 km/h: Das ist der neue Rekord für ein muskelbetriebenes Fahrzeug. So schnell fuhr jetzt der Kanadier Todd Reichert bei der World Human Powered Speed Challenge in Nevada.",
+        "U": "images/al1.jpg",
+        "U1": "images/ali2.jpg"
+    },
+    {
+        "F": "9 Wie hoch ist das größte Fahrrad?",
+        "A1": "4,50 Meter",
+        "A2": "3,20 Meter",
+        "A3": "3,70 Meter",
+        "correctAnswer": "3,70 Meter",
+        "B": "Mit seinem größten Fahrrad der welt, stolze 7,80 Meter lang und 3,70 Meter hoch, kann der ehemalige Radrennfahrer aus Kolpin höchstens auf der Tartanbahn eines Fußballplatzes eine Runde drehen. Seit 1989 steht der gelernte Karosseriebauer mit dem Weltrekord-Rad im berühmten Guinness-Buch der Rekorde.",
+        "U": "images/aii.jpg",
+        "U1": "images/okjpg.jpg"
+    },
+    {
+        "F": "10 Welche Firma ist der größte Fahrradhersteller der Welt ?",
+        "A1": "Ortler",
+        "A2": "Cube",
+        "A3": "Giant",
+        "correctAnswer": "Giant",
+        "B": "Das Unternehmen Giant wurde in den 70ern in Taiwan gegründet und hat bis heute seinen Hauptsitz in der Republik China. Innerhalb von 8 Jahren konnte sich Giant zum größten Fahrradhersteller in Taiwan etablieren. Die Weltherrschaft Giants im Bereich der Fahrräder begann bereits in den 80ern. Zunächst Europa, dann Amerika, Australien, Kanada, Japan und schließlich China.",
+        "U": "images/lol.jpg",
+        "U1": "images/now.jpg"
     }
 ]
