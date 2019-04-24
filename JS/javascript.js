@@ -134,9 +134,11 @@ function quizshow(a) {
         lastQuestion = createQuestion(a[i]);
     }
     var buttt = document.createElement("button")
-    var butttin = document.createTextNode("Beenden")
+    var butttain = document.createTextNode("Beenden")
+  
+
     buttt.classList.add("button_main")
-    buttt.appendChild(butttin)
+    buttt.appendChild(butttain)
     buttt.onclick = function () {
         showresult()
     };
@@ -276,11 +278,11 @@ function showresult() {
         p.appendChild(pin);
     }
     if (richtigfrage.length == 1) {
-        var pin = document.createTextNode("Wow sie haben " + richtigfrage.length + " Fragen Richtig beantwortet. Mit einer Punktzahle von " + richtigfrage.length + "  liegen sie fast im Durschnitt. Sie sollten ihr Allgemeinwissen auffrischen!!")
+        var pin = document.createTextNode("Wow sie haben " + richtigfrage.length + " Fragen Richtig beantwortet. Mit einer Punktzahle von " + richtigfrage.length + "  liegen sie nicht im Durschnitt. Sie sollten ihr Allgemeinwissen auffrischen!!")
         p.appendChild(pin);
     }
     if (richtigfrage.length == 2) {
-        var pin = document.createTextNode("Wow sie haben " + richtigfrage.length + " Fragen Richtig beantwortet. Mit einer Punktzahle von " + richtigfrage.length + "  liegen sie im Durschnitt. Sie haben ein gutes Allgemeinwissen !!")
+        var pin = document.createTextNode("Wow sie haben " + richtigfrage.length + " Fragen Richtig beantwortet. Mit einer Punktzahle von " + richtigfrage.length + "  liegen sie fast im Durschnitt. Sie haben ein gutes Allgemeinwissen !!")
         p.appendChild(pin);
     }
     if (richtigfrage.length == 3) {
@@ -419,9 +421,10 @@ function warenkorb(mouseEvent) {
 
         }
         function deletoneit(a) {
-            cart.pop(a)
+            console.log(a)
+            delete cart[a];
             document.getElementById("warenkorb").innerHTML = "";
-            createacart();
+            createacart[inf]
 
 
 
