@@ -64,9 +64,12 @@ function onFahrraederLoaded(fahrraeder) {
         para.appendChild(img);
         para.classList.add("para_")
         var element = document.getElementById("fahrradList");
+        var divi = document.createElement("div");
+        divi.classList.add("fivi")
 
 
-        element.appendChild(para);
+        element.appendChild(divi);
+        divi.appendChild(para)
         para.appendChild(head_f);
         para.appendChild(unorli);
         unorli.appendChild(listi1);
