@@ -81,6 +81,7 @@ p {
 }
 #para_anmelden{
     text-decoration:none;
+    background-color:lightskyblue;
     position:relative;
     
     
@@ -110,6 +111,7 @@ input {
 
 .head_ {
     width: 600px;
+    background-color: darkcyan;
 }
 
 .button_anmelden {
@@ -117,16 +119,16 @@ input {
     margin: 12px;
     padding: 5px;
     border-radius: 12px;
-    background-color: yellowgreen;
+    background-color: darkcyan;
     color: white;
     text-align: center;
 
 }
 
 .button_anmelden:hover {
-    color: yellowgreen;
+    color: darkcyan;
     background-color: white;
-    border: 1px solid yellowgreen;
+    border: 1px solid darkcyan;
     text-align: center;
 
 }

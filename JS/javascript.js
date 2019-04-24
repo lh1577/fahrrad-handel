@@ -1,4 +1,4 @@
-var x ;
+var x;
 var cart = [];
 var cache = {};
 var quizda = 0;
@@ -149,7 +149,7 @@ function quizshow(a) {
         var a1 = document.createElement("button");
         var a1in = document.createTextNode(a.A1)
         a1.classList.add("buttonmain")
-        
+
         a1.onclick = function (event) {
             antwert(event, a, a.A1);
         };
@@ -261,7 +261,7 @@ function warenkorb(mouseEvent) {
         var inf = JSON.parse(data);
         createacart(inf)
     })
-    
+
     function createacart(inf) {
         var dw = document.createElement("dic")
         var hw = document.createElement("h1")
@@ -302,7 +302,7 @@ function warenkorb(mouseEvent) {
         elem.appendChild(tab)
 
         for (i = 0; i < cart.length; i++) {
-            
+
             var trw1 = document.createElement("tr")
             var tdw1 = document.createElement("td")
             var tdw1in = document.createTextNode(cart[i].name)
@@ -311,17 +311,17 @@ function warenkorb(mouseEvent) {
             var butinin = document.createTextNode("  Entfernen")
             butin.appendChild(butinin)
             butin.classList.add("butin")
-            butin.classList.add("fas","fa-trash-alt")
+            butin.classList.add("fas", "fa-trash-alt")
             var a = i;
-            butin.onclick = function(   ){
-                deletoneit(a,mouseEvent);
+            butin.onclick = function () {
+                deletoneit(a, mouseEvent);
             }
             var butin1 = document.createElement("button")
             var butinin1 = document.createTextNode("  Hinzufügen")
             butin1.appendChild(butinin1)
             butin1.classList.add("butin")
-            butin1.classList.add("fas","fa-plus")
-            butin1.onclick=function(){
+            butin1.classList.add("fas", "fa-plus")
+            butin1.onclick = function () {
                 loadanypage(5);
             }
             var tdw2in = document.createTextNode(cart[i].beschreibung)
@@ -345,21 +345,26 @@ function warenkorb(mouseEvent) {
             tab.appendChild(trw1)
 
 
-            
-            
+
+
 
         }
-        function deletoneit() {
+        function deletoneit(mouseEvent) {
             console.log("function wurde aufgerufen")
             console.log(a)
-            delete cart[a];
-            document.getElementById("warenkorb").innerHTML="";
-            console.log(cart)
-            createacart()
-            
-           
+            console.log(cart[a].artikelNr)
+            if (a == cart[a].artikelNr) {
+                document.getElementById("warenkorb").innerHTML = "";
+                delete cart[a];
+                console.log(cart)
+                createacart();
+            }
 
-    }
+
+
+
+
+        }
 
 
 
