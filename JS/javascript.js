@@ -225,7 +225,7 @@ function antwert(event, frage, selectedAnswer) {
     pbut.classList.add("pbut")
     console.log(frage)
     var par = document.createElement("p")
-    var parin = document.createTextNode(richtigfrage.length+" von 5 Fragen Richtig!!")
+    var parin = document.createTextNode(richtigfrage.length + " von 5 Fragen Richtig!!")
     par.appendChild(parin);
     pbut.appendChild(pbutin)
     ph1.appendChild(ph1in)
@@ -245,24 +245,58 @@ function closeantwert() {
     document.getElementById("quiz").innerHTML = "";
     document.getElementsByClassName("dil").innerHTML = "";
 }
-function showresult(){
+function showresult() {
+
     var elemem = document.getElementById("quiz");
+
     var dic = document.createElement("div")
     dic.classList.add("diiic")
+    diic = document.createElement("div")
+    dic.classList.add("d_")
     var head1 = document.createElement("h1");
+    head1.classList.add("heedi")
     var head1in = document.createTextNode("Das Resultat")
+
     var but = document.createElement("button");
     but.classList.add("buuut")
     var butin = document.createTextNode("Startseite")
     but.appendChild(butin)
-    but.onclick= function(){
+    but.onclick = function () {
         loadanypage(5);
     }
 
-
+    var p = document.createElement("p");
+    p.classList.add("respa")
     head1.appendChild(head1in);
     dic.appendChild(head1);
-    dic.appendChild(but)
+    if (richtigfrage.length == 0) {
+        var pin = document.createTextNode("Wow sie haben " + richtigfrage.length + " Fragen Richtig beantwortet. Mit einer Punktzahle von " + richtigfrage.length + "  liegen sie nicht im Durschnitt. Sie sollten ihr Allgemeinwissen auffrischen!!")
+        p.appendChild(pin);
+    }
+    if (richtigfrage.length == 1) {
+        var pin = document.createTextNode("Wow sie haben " + richtigfrage.length + " Fragen Richtig beantwortet. Mit einer Punktzahle von " + richtigfrage.length + "  liegen sie fast im Durschnitt. Sie sollten ihr Allgemeinwissen auffrischen!!")
+        p.appendChild(pin);
+    }
+    if (richtigfrage.length == 2) {
+        var pin = document.createTextNode("Wow sie haben " + richtigfrage.length + " Fragen Richtig beantwortet. Mit einer Punktzahle von " + richtigfrage.length + "  liegen sie im Durschnitt. Sie haben ein gutes Allgemeinwissen !!")
+        p.appendChild(pin);
+    }
+    if (richtigfrage.length == 3) {
+        var pin = document.createTextNode("Wow sie haben " + richtigfrage.length + " Fragen Richtig beantwortet. Mit einer Punktzahle von " + richtigfrage.length + "  liegen sie fast über Durschnitt. Sie können stolz sein!!")
+        p.appendChild(pin);
+    }
+    if (richtigfrage.length == 4) {
+        var pin = document.createTextNode("Wow sie haben " + richtigfrage.length + " Fragen Richtig beantwortet. Mit einer Punktzahle von " + richtigfrage.length + "  liegen über dem Durschnitt. Da kennt sich aber jemand aus !!")
+        p.appendChild(pin);
+    }
+    if (richtigfrage.length == 5) {
+        var pin = document.createTextNode("Wow sie haben " + richtigfrage.length + " Fragen Richtig beantwortet. Mit einer Punktzahle von " + richtigfrage.length + "  liegen deutlich über dem Durschnitt. Vor dem Computer sitzt wohl ein Fahrradexperte (oder eine Person mit viel Glück).!!")
+        p.appendChild(pin);
+    }
+
+    diic.appendChild(p);
+    dic.appendChild(diic);
+    dic.appendChild(but);
     elemem.appendChild(dic);
 
 
@@ -382,7 +416,7 @@ function warenkorb(mouseEvent) {
             cart.pop(a)
             document.getElementById("warenkorb").innerHTML = "";
             createacart();
-           
+
 
 
 

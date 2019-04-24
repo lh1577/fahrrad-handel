@@ -1,6 +1,6 @@
 [
     {
-        "F": "Wann wurde das Fahrrad erfunden ?",
+        "F": " 1 Wann wurde das Fahrrad erfunden ?",
         "A1": "1817",
         "A2": "1756",
         "A3": "1832",
@@ -10,7 +10,7 @@
         "U1":"images/a11.jpg"
     },
     {
-        "F": "Wer gewann   die Tour de France 2018 ?",
+        "F": " 2 Wer gewann   die Tour de France 2018 ?",
         "A1":"Geraint Thomas",
         "A2":"Peter Sagan",
         "A3":"Chris Froome",
@@ -21,7 +21,7 @@
         
     },
     {
-        "F": "Welches Fahrrad sollte man benutzen wenn man im Gelände fährt ?",
+        "F": "3 Welches Fahrrad sollte man benutzen wenn man im Gelände fährt ?",
         "A1": "Citybike",
         "A2": "Mountainbike",
         "A3": "Rennrad",
@@ -32,7 +32,7 @@
 
     },
     {
-        "F": "Wo leben die Menschen die am meisten Fahrrad fahren ? ",
+        "F": " 4 Wo leben die Menschen die am meisten Fahrrad fahren ? ",
         "A1": "Niederlande",
         "A2":"Italien",
         "A3":"Dänemark",
@@ -42,7 +42,7 @@
         "U1":"images/a44jpg.jpg"
     },
     {
-        "F": "In welchem Land wurde das Fahrrad erfunden ?",
+        "F": " 5 In welchem Land wurde das Fahrrad erfunden ?",
         "A1": "Frankreich",
         "A2": "China",
         "A3": "Deutschland",

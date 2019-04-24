@@ -38,8 +38,18 @@ h1 {
 
 
 }
+
+.respa{
+    font-size:1.2em;
+    background-color:lightseagreen;
+
+}
 .divstart{
     display:flex;
+}
+.heedi{
+    background-color:darkcyan;
+
 }
 .buuut{
     background-color:slategrey;
