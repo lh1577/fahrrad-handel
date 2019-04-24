@@ -314,8 +314,9 @@ function warenkorb(mouseEvent) {
             butin.classList.add("fas", "fa-trash-alt")
             var a = i;
             butin.onclick = function () {
-                deletoneit(a, mouseEvent);
+                deletoneit(a);
             }
+            console.log(a)
             var butin1 = document.createElement("button")
             var butinin1 = document.createTextNode("  Hinzufügen")
             butin1.appendChild(butinin1)
@@ -349,16 +350,10 @@ function warenkorb(mouseEvent) {
 
 
         }
-        function deletoneit(mouseEvent) {
-            console.log("function wurde aufgerufen")
-            console.log(a)
-            console.log(cart[a].artikelNr)
-            if (a == cart[a].artikelNr) {
-                document.getElementById("warenkorb").innerHTML = "";
-                delete cart[a];
-                console.log(cart)
-                createacart();
-            }
+        function deletoneit() {
+            document.getElementById("warenkorb").innerHTML = "";
+            createacart();
+           
 
 
 
