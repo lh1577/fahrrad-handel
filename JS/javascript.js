@@ -124,10 +124,7 @@ function quizload() {
         var loadquestion = JSON.parse(data)
         document.getElementById("quizsite").innerHTML = "";
         quizes.push(loadquestion)
-        
-        console.log(quizes)
 
-        console.log("data found quizfrage")
         quizshow(loadquestion)
 
 
@@ -194,10 +191,7 @@ function quizshow(a) {
 
 function antwert(event, frage, selectedAnswer) {
     var eleme = document.getElementById("quiz")
-    console.log(frage.correctAnswer)
-    console.log(selectedAnswer)
     if (frage.correctAnswer == selectedAnswer) {
-        console.log("Richtig")
         var ph1in = document.createTextNode("RICHTIG!!!")
         var ph1 = document.createElement("h1")
         ph1.classList.add("ph1_correct")
@@ -227,9 +221,6 @@ function antwert(event, frage, selectedAnswer) {
     bes.appendChild(besin)
     pbut.onclick = closeantwert;
     pbut.classList.add("pbut")
-    console.log(frage)
-
-   
     pbut.appendChild(pbutin)
     ph1.appendChild(ph1in)
     bim.appendChild(bes)
@@ -254,6 +245,9 @@ function closeantwert() {
 function showresult() {
 
     var elemem = document.getElementById("quiz");
+    var divhole = document.createElement("div");
+    divhole.classList.add("q");
+
 
     var dic = document.createElement("div")
     dic.classList.add("diiic")
@@ -268,10 +262,7 @@ function showresult() {
     var butin = document.createTextNode("Startseite")
     but.appendChild(butin)
     but.onclick = function () {
-        
-        console.log(richtigfrage)
-        y = 0;
-        console.log(richtigfrage)
+        y = 0;    
         loadanypage(5);
     }
     
@@ -328,7 +319,9 @@ function showresult() {
     diic.appendChild(p);
     dic.appendChild(diic);
     dic.appendChild(but);
+    dic.appendChild(divhole)
     elemem.appendChild(dic);
+    
 
 
 }
@@ -405,11 +398,10 @@ function warenkorb(mouseEvent) {
             butin.appendChild(butinin)
             butin.classList.add("butin")
             butin.classList.add("fas", "fa-trash-alt")
-            var a = i;
+            var a = i ;
             butin.onclick = function () {
                 deletoneit(a);
             }
-            console.log(a)
             var butin1 = document.createElement("button")
             var butinin1 = document.createTextNode("  Hinzufügen")
             butin1.appendChild(butinin1)
@@ -443,18 +435,10 @@ function warenkorb(mouseEvent) {
 
 
         }
-        function deletoneit(a) {
-            console.log(a)
-            delete cart[a];
-            document.getElementById("warenkorb").innerHTML = "";
-            createacart[inf]
+        
+        
 
 
-
-
-
-
-        }
 
 
 
