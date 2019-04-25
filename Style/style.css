@@ -164,22 +164,21 @@ h1 {
     color:white;
     border:none;
     margin:12px;
+    
     padding:5px;
     border-radius:12px;
 
+}
+.ilk{
+    display:flex;
+    justify-content:center;
+    margin-right:12px;
 }
 .buuut:hover{
     background-color:white;
     color:slategrey;
     border:solid 2px slategrey;
 }
-.inexul{
-    display:flex;
-    justify-content:center;
-    width:100%;
-
-}
-
 ul {
     background-color: slategrey;
     border-radius: 12px;
@@ -617,7 +616,7 @@ th{
     left:50px;
     right:50px;
     bottom:100px;
-    height:300px;
+    height:400px;
     border-radius:12px;
     z-index:2;
 
