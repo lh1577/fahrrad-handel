@@ -132,7 +132,6 @@ function quizload() {
 
 }
 function quizshow(a) {
-
     var lastQuestion = null;
     for (var i = y; i < a.length; i++) {
         lastQuestion = createQuestion(a[i]);
@@ -151,7 +150,6 @@ function quizshow(a) {
         var a1 = document.createElement("button");
         var a1in = document.createTextNode(a.A1)
         a1.classList.add("buttonmain")
-
         a1.onclick = function (event) {
             antwert(event, a, a.A1);
         };
