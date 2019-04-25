@@ -57,9 +57,6 @@ function onFahrraederLoaded(fahrraeder) {
         but1.artikelNr = fahrraeder[i].artikelNr;
         var fiv = document.createElement("div")
         fiv.classList.add("fiv")
-        fiv.appendChild(but);
-        fiv.appendChild(but1);
-
 
 
         var img = document.createElement("img");
@@ -69,7 +66,9 @@ function onFahrraederLoaded(fahrraeder) {
         para.classList.add("para_")
         var element = document.getElementById("fahrradList");
         var divi = document.createElement("div");
-        divi.classList.add("fivi")
+        divi.classList.add("fiv")
+        fiv.appendChild(but)
+        fiv.appendChild(but1)
 
 
         element.appendChild(divi);

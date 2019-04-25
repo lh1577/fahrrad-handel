@@ -154,6 +154,10 @@ h1 {
 .divstart{
     display:flex;
     justify-content: center;
+    background-color:darkgray;
+    border-radius:12px;
+    margin:12px;
+    padding:5px;
 }
 .heedi{
     background-color:darkcyan;
@@ -296,7 +300,7 @@ input {
 .para_{
     float:left;
     width:320px;
-    height:400px;
+    height:450px;
     background-color:cadetblue;
 }
 .li_{
@@ -429,11 +433,9 @@ th{
     background-color:yellowgreen;
     border-radius: 12px 12px 0px 0px;
 }
-.fiv{
-    display:flex;
-}
 .fivi{
     background-color:cadetblue;
+
 }
 .flex_{
     display:flex;
