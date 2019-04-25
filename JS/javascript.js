@@ -5,6 +5,7 @@ var cache = {};
 var quizda = 0;
 var richtigfrage = [];
 var quizes = []
+
 function sendRequest(url, callback) {
     if (cache[url] == null) {
         var xhttp = new XMLHttpRequest();
@@ -129,64 +130,100 @@ function quizload() {
 
 
     })
-
 }
+
 function quizshow(a) {
     var lastQuestion = null;
     for (var i = y; i < a.length; i++) {
         lastQuestion = createQuestion(a[i]);
-    }
-
-   
-
-    function createQuestion(a) {
-        var elem = document.getElementById("quizsite");
-        var fr = document.createElement("h1")
-        var frin = document.createTextNode(a.F)
-        var diva = document.createElement("div")
-        diva.classList.add("diva_")
-        var dil = document.createElement("div")
-        dil.classList.add("dil")
-        var a1 = document.createElement("button");
-        var a1in = document.createTextNode(a.A1)
-        a1.classList.add("buttonmain")
-        a1.onclick = function (event) {
-            antwert(event, a, a.A1);
-        };
-        var a2 = document.createElement("button");
-        var a2in = document.createTextNode(a.A2)
-        a2.classList.add("buttonmain")
-        a2.onclick = function (event) {
-            antwert(event, a, a.A2);
-        };
-        var a3 = document.createElement("button");
-        var a3in = document.createTextNode(a.A3)
-        a3.classList.add("buttonmain")
-        // a3.onclick=antwert(a[i].FA3)
-
-        a3.onclick = function (event) {
-            antwert(event, a, a.A3);
-        };
-        a1.appendChild(a1in)
-        a2.appendChild(a2in)
-        a3.appendChild(a3in)
-        diva.appendChild(a1)
-        diva.appendChild(a2)
-        diva.appendChild(a3)
-
-
-
-        fr.appendChild(frin);
-        dil.appendChild(fr);
-        dil.appendChild(diva)
-
-
-
-        elem.appendChild(dil)
-        return elem;
+        function createQuestion(a) {
+            var elem = document.getElementById("quizsite");
+            var fr = document.createElement("h1")
+            var frin = document.createTextNode(a.F)
+            var diva = document.createElement("div")
+            diva.classList.add("diva_")
+            var dil = document.createElement("div")
+            dil.classList.add("dil")
+            var a1 = document.createElement("button");
+            var a1in = document.createTextNode(a.A1)
+            a1.classList.add("buttonmain")
+            a1.onclick = function (event) {
+                antwert(event, a, a.A1);
+            };
+            var a2 = document.createElement("button");
+            var a2in = document.createTextNode(a.A2)
+            a2.classList.add("buttonmain")
+            a2.onclick = function (event) {
+                antwert(event, a, a.A2);
+            };
+            var a3 = document.createElement("button");
+            var a3in = document.createTextNode(a.A3)
+            a3.classList.add("buttonmain")
+            a3.onclick = function (event) {
+                antwert(event, a, a.A3);
+            };
+            a1.appendChild(a1in)
+            a2.appendChild(a2in)
+            a3.appendChild(a3in)
+            diva.appendChild(a1)
+            diva.appendChild(a2)
+            diva.appendChild(a3)
+            fr.appendChild(frin);
+            dil.appendChild(fr);
+            dil.appendChild(diva)
+            elem.appendChild(dil)
+            return elem;
+        }
     }
 }
+function helppeople() {
+    var ini = document.getElementById("heplless");
+    var divcan = document.createElement("canvas");
+    divcan.classList.add("canvas")
+    var divhol = document.createElement("div")
+    divhol.classList.add("hol");
+    var divfle = document.createElement("div")
+    divfle.classList.add("divfle")
+    var din = document.createElement("div");
+    din.classList.add("hop");
+    var b1 = document.createElement("button");
+    var b1in = document.createTextNode("Rechteck")
+    b1.classList.add("buthelp")
+    b1.onclick = function () { }
+    var b2 = document.createElement("button")
+    var b2in = document.createTextNode("Kreise")
+    b2.classList.add("buthelp")
+    b2.onclick = function () { }
+    var b3 = document.createElement("button")
+    var b3in = document.createTextNode("Löschen")
+    b3.classList.add("buthelp")
+    b3.onclick = function () { }
+    var b4 = document.createElement("button")
+    var b4in = document.createTextNode("Startseite")
+    b4.classList.add("buthelp")
+    b4.onclick = function () {
+        loadanypage(5);
+    }
+    var divi = document.createElement("div");
+    divi.classList.add("dlol")
+    b1.appendChild(b1in);
+    b2.appendChild(b2in);
+    b3.appendChild(b3in);
+    b4.appendChild(b4in);
+    divfle.appendChild(b1);
+    divfle.appendChild(b2);
+    divfle.appendChild(b3);
+    divfle.appendChild(b4);
 
+    din.appendChild(divfle)
+    ini.appendChild(din);
+    ini.appendChild(divcan)
+    ini.appendChild(divhol);
+
+    var canvas = document.querySelector("canvas");
+    var c = canvas.getContext("2d");
+    console.warn(c);
+}
 function antwert(event, frage, selectedAnswer) {
     var eleme = document.getElementById("quiz")
     if (frage.correctAnswer == selectedAnswer) {
@@ -194,21 +231,18 @@ function antwert(event, frage, selectedAnswer) {
         var ph1 = document.createElement("h1")
         ph1.classList.add("ph1_correct")
         richtigfrage.push(1);
-
-
     }
     else {
         var ph1in = document.createTextNode("FALSCH!!!")
         var ph1 = document.createElement("h1");
         ph1.classList.add("ph1_wrong")
-
     }
     var pop = document.createElement("div")
     pop.classList.add("pop")
     var bim = document.createElement("div")
     bim.classList.add("bim")
-    var divlol = documentl.createElement("div")
-    divlol.classlist.add("olo")
+    var divlol = document.createElement("div")
+    divlol.classList.add("olo")
     var pbut = document.createElement("button")
     var pbutin = document.createTextNode("Schließen")
     var bes = document.createElement("p")
@@ -235,12 +269,13 @@ function antwert(event, frage, selectedAnswer) {
     eleme.appendChild(pop);
 
 }
+
 function closeantwert() {
     y++
     document.getElementById("quiz").innerHTML = "";
     document.getElementsByClassName("dil").innerHTML = "";
     quizload()
-    
+
 }
 function showresult() {
 
@@ -262,10 +297,11 @@ function showresult() {
     var butin = document.createTextNode("Startseite")
     but.appendChild(butin)
     but.onclick = function () {
-        y = 0;    
+        y = 0;
+        richtigfrage = [];
         loadanypage(5);
     }
-    
+
 
     var p = document.createElement("p");
     p.classList.add("respa")
@@ -296,7 +332,7 @@ function showresult() {
         p.appendChild(pin);
     }
     if (richtigfrage.length == 6) {
-        var pin = document.createTextNode("Wow sie haben " + richtigfrage.length + " Fragen Richtig beantwortet. Mit einer Punktzahle von " + richtigfrage.length + "  liegen sie knapp über dem Durschnitt.Sie haben ein gutes Allgemeinwissen !!") 
+        var pin = document.createTextNode("Wow sie haben " + richtigfrage.length + " Fragen Richtig beantwortet. Mit einer Punktzahle von " + richtigfrage.length + "  liegen sie knapp über dem Durschnitt.Sie haben ein gutes Allgemeinwissen !!")
         p.appendChild(pin);
     }
     if (richtigfrage.length == 7) {
@@ -321,7 +357,7 @@ function showresult() {
     dic.appendChild(but);
     elemem.appendChild(dic);
     elemem.appendChild(divhole)
-    
+
 
 
 }
@@ -382,13 +418,11 @@ function warenkorb(mouseEvent) {
         trw.appendChild(thw2)
         trw.appendChild(thw4)
         trw.appendChild(thw3)
-
         tab.appendChild(trw)
         elem.appendChild(dw)
         elem.appendChild(tab)
 
-        for (i = 0; i < cart.length; i++) {
-
+        cart.forEach(function (fahrrad, i, array) {
             var trw1 = document.createElement("tr")
             var tdw1 = document.createElement("td")
             var tdw1in = document.createTextNode(cart[i].name)
@@ -398,9 +432,9 @@ function warenkorb(mouseEvent) {
             butin.appendChild(butinin)
             butin.classList.add("butin")
             butin.classList.add("fas", "fa-trash-alt")
-            var a = i ;
             butin.onclick = function () {
-                deletoneit(a);
+                deletoneit(fahrrad);
+
             }
             var butin1 = document.createElement("button")
             var butinin1 = document.createTextNode("  Hinzufügen")
@@ -415,9 +449,7 @@ function warenkorb(mouseEvent) {
             var tdw4in = document.createElement("img")
             tdw4in.src = cart[i].imageUrl
             var tdw3 = document.createElement("td")
-
             var tdw3in = document.createTextNode(cart[i].preis)
-
             tdw1.appendChild(tdw1in)
             tdw1.appendChild(butin)
             tdw1.appendChild(butin1)
@@ -429,35 +461,19 @@ function warenkorb(mouseEvent) {
             trw1.appendChild(tdw4)
             trw1.appendChild(tdw3)
             tab.appendChild(trw1)
-
-
-
-
+        });
+        function deletoneit(a) {
+            var idx = cart.indexOf(a);
+            if (idx !== -1) {
+                cart.splice(idx, 1);
+            }
+            else {
+                console.warn('zu loeschendes element wurde nicht gefunden');
+            }
+            document.getElementById("warenkorb").innerHTML = "";
+            createacart();
 
         }
-        
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
-
-
-
-
 }
-
-
 //         <i class="fas fa-angle-double-down"></i>

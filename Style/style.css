@@ -14,6 +14,7 @@ body {
     font-size: 1.0em;
 }
 
+
 h1 {
     background-color: yellowgreen;
     color: white;
@@ -39,17 +40,65 @@ h1 {
 
 
 }
-.hol{
-    position: absolute; 
-    top: 0; 
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background:rgba(110, 108, 108, 0.5);
+.buthelp{
+    background-color:slategray;
+    color:white;
+    border:1px solid slategrey;
+    margin:12px;
+    padding:5px;
+    border-radius:12px;
+
+
+}
+.canvas{
     position:absolute;
-    top:0px;
-    left:0px;
+    top:50px;
+    left:50px;
+    bottom:50px;
+    right:50px;
+    border:5px solid yellowgreen;
+    border-radius:12px;
     z-index:1;
+
+
+}
+.buthelp:hover{
+    background-color:white;
+    color:slategrey;
+    border:none;
+    margin:12px;
+    padding:5px;
+    border-radius:12px;
+}
+.divfle{
+    display:flex;
+    justify-content:center;
+    width:300px;
+    position:absolute;
+    z-index:3;
+    
+    top:10px;
+    left:20px;
+}
+.hol{
+    z-index:1;
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background:rgba(110, 108, 108, 0.5);
+
+}
+.hop{
+    z-index:2;
+    position:absolute;
+    background-color:white;
+    top:50px;
+    left:50px;
+    bottom:50px;
+    right:50px;
+    border-radius:12px;
 
 }
 .olo{
@@ -410,4 +459,14 @@ th{
     border:2px solid slategrey;
     padding:30px;
     
+}
+.hq{
+    font-size:1.5em;
+    color:slategrey;
+    border:slategray 1px dashed;
+    position:absolute;
+    left:100px;
+    right:100px;
+    bottom:300px;
+    top:100px;
 }
