@@ -209,6 +209,8 @@ function antwert(event, frage, selectedAnswer) {
     pop.classList.add("pop")
     var bim = document.createElement("div")
     bim.classList.add("bim")
+    var divlol = documentl.createElement("div")
+    divlol.classlist.add("olo")
     var pbut = document.createElement("button")
     var pbutin = document.createTextNode("Schließen")
     var bes = document.createElement("p")
@@ -231,7 +233,7 @@ function antwert(event, frage, selectedAnswer) {
     pop.appendChild(ph1)
     pop.appendChild(pbut)
     pop.appendChild(bim)
-
+    eleme.appendChild(divlol)
     eleme.appendChild(pop);
 
 }
@@ -246,7 +248,7 @@ function showresult() {
 
     var elemem = document.getElementById("quiz");
     var divhole = document.createElement("div");
-    divhole.classList.add("q");
+    divhole.classList.add("hol");
 
 
     var dic = document.createElement("div")
@@ -319,8 +321,8 @@ function showresult() {
     diic.appendChild(p);
     dic.appendChild(diic);
     dic.appendChild(but);
-    dic.appendChild(divhole)
     elemem.appendChild(dic);
+    elemem.appendChild(divhole)
     
 
 
