@@ -56,7 +56,7 @@ function onFahrraederLoaded(fahrraeder) {
         but1.onclick = warehin;
         but1.artikelNr = fahrraeder[i].artikelNr;
         var fiv = document.createElement("div")
-        fiv.classList.add("fiv")
+        fiv.classList.add("fivi")
 
 
         var img = document.createElement("img");
