@@ -426,6 +426,8 @@ th{
 }
 .divclass{
     background-color:white;
+    display:flex;
+    justify-content: center;
 }
 .diva_{
     background-color:darkcyan;
@@ -504,6 +506,15 @@ th{
 .ph1_wrong{
     background-color:red;
 }
+.olop{
+    display:block;
+}
+.lol{
+    display:none;
+}
+.polp{
+    display:none;
+}
 .mybut{
     background-color:slategray;
     color:white;
@@ -512,6 +523,10 @@ th{
     height:40px;
     margin:20px;
 
+}
+.hoi{
+    display:flex;
+    justify-content:center;
 }
 .mybut:hover{
     background-color:white;

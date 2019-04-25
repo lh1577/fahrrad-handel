@@ -206,7 +206,7 @@ function loadabbrechen(){
     var d2 = document.createElement("div")
     d2.classList.add("d2")
     var p = document.createElement("p");
-    var pin = document.createTextNode("Ihre Punktzahl beträgt "+richtigfrage.length+" . Sind sie sicher das sie sie aufhören wollen?")
+    var pin = document.createTextNode("Ihre Punktzahl beträgt "+richtigfrage.length+" . Sind sie sicher das sie  aufhören wollen?")
     var b = document.createElement("button");
     var bin = document.createTextNode("JA")
     b.classList.add("ja");
@@ -220,6 +220,7 @@ function loadabbrechen(){
     var b1in = document.createTextNode("NEIN");
     b1.classList.add("nein");
     b1.onclick = function(){
+        
         loadanypage(7)
     }
     p.appendChild(pin);
@@ -297,7 +298,7 @@ function antwert(event, frage, selectedAnswer) {
     var divlol = document.createElement("div")
     divlol.classList.add("olo")
     var pbut = document.createElement("button")
-    var pbutin = document.createTextNode("Schließen")
+    var pbutin = document.createTextNode("Nächste Frage")
     var bes = document.createElement("p")
     var besin = document.createTextNode(frage.B)
     bes.classList.add("bes")
