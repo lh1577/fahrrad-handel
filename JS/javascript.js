@@ -141,6 +141,7 @@ function quizshow(a) {
             var elem = document.getElementById("quizsite");
             var fr = document.createElement("h1")
             var frin = document.createTextNode(a.F)
+            fr.classList.add("frj")
             var divs = document.createElement("div")
             divs.classList.add("divs")
             var fra = document.createElement("div");
@@ -206,11 +207,12 @@ function loadabbrechen(){
     var d2 = document.createElement("div")
     d2.classList.add("d2")
     var p = document.createElement("p");
+    p.classList.add("loia")
     var pin = document.createTextNode("Ihre Punktzahl beträgt "+richtigfrage.length+" . Sind sie sicher das sie  aufhören wollen?")
-    var b = document.createElement("button");
+    var b3 = document.createElement("button");
     var bin = document.createTextNode("JA")
-    b.classList.add("ja");
-    b.onclick = function(){
+    b3.classList.add("ja");
+    b3.onclick = function(){
         y = 0;
         b = 1;
         richtigfrage = [];
@@ -220,14 +222,13 @@ function loadabbrechen(){
     var b1in = document.createTextNode("NEIN");
     b1.classList.add("nein");
     b1.onclick = function(){
-        
-        loadanypage(7)
+        quizload();
     }
     p.appendChild(pin);
-    b.appendChild(bin)
+    b3.appendChild(bin)
     b1.appendChild(b1in)
     d1.appendChild(p)
-    d1.appendChild(b)
+    d1.appendChild(b3)
     d1.appendChild(b1)
     e.appendChild(d1)
     e.appendChild(d2)

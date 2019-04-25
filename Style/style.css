@@ -6,6 +6,10 @@ iframe {
 h1 {
     text-align: center;
 }
+.pj{
+    background-color:darkcyan;
+    font-family:1.2em;
+}
 
 
 body {
@@ -23,6 +27,12 @@ h1 {
     border-radius: 12px;
     text-align: center;
 
+}
+.loia{
+    background-color:darkcyan;
+}
+.frj{
+    background-color:seagreen;
 }
 .diiic{
     position:absolute;
@@ -143,6 +153,7 @@ h1 {
 }
 .divstart{
     display:flex;
+    justify-content: center;
 }
 .heedi{
     background-color:darkcyan;
@@ -162,6 +173,12 @@ h1 {
     color:slategrey;
     border:solid 2px slategrey;
 }
+.inexul{
+    display:flex;
+    justify-content:center;
+    width:100%;
+
+}
 
 ul {
     background-color: slategrey;
@@ -169,8 +186,9 @@ ul {
     margin: 12px;
     padding: 10px;
 }
-
-
+.p_{
+    background-color:cadetblue;
+}
 .button_main {
     text-decoration: none;
     background-color: yellowgreen;
@@ -209,6 +227,8 @@ h3 {
 
 
 }
+
+
 
 p {
     background-color: yellowgreen;
@@ -277,7 +297,8 @@ input {
 .para_{
     float:left;
     width:320px;
-    height:400px
+    height:400px;
+    background-color:cadetblue;
 }
 .li_{
     list-style:circle;
@@ -413,7 +434,7 @@ th{
     display:flex;
 }
 .fivi{
-    background-color:SteelBlue ;
+    background-color:cadetblue;
 }
 .flex_{
     display:flex;
@@ -488,6 +509,13 @@ th{
     border-radius:12px;
     margin:10px;
     padding:5px;
+}
+.h1__{
+    background-color:darkcyan;
+}
+.stst{
+    background-color:darkgrey;
+
 }
 
 .bes{
