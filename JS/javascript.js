@@ -1,4 +1,5 @@
 var y = 0;
+var b = 1;
 var x;
 var cart = [];
 var cache = {};
@@ -134,12 +135,16 @@ function quizload() {
 
 function quizshow(a) {
     var lastQuestion = null;
-    for (var i = y; i < a.length; i++) {
+    for (var i = y; i < b; i++) {
         lastQuestion = createQuestion(a[i]);
         function createQuestion(a) {
             var elem = document.getElementById("quizsite");
             var fr = document.createElement("h1")
             var frin = document.createTextNode(a.F)
+            var divs = document.createElement("div")
+            divs.classList.add("divs")
+            var fra = document.createElement("div");
+            fra.classList.add("fra")
             var diva = document.createElement("div")
             diva.classList.add("diva_")
             var dil = document.createElement("div")
@@ -149,36 +154,87 @@ function quizshow(a) {
             a1.classList.add("buttonmain")
             a1.onclick = function (event) {
                 antwert(event, a, a.A1);
+
             };
             var a2 = document.createElement("button");
             var a2in = document.createTextNode(a.A2)
             a2.classList.add("buttonmain")
             a2.onclick = function (event) {
                 antwert(event, a, a.A2);
+
             };
             var a3 = document.createElement("button");
             var a3in = document.createTextNode(a.A3)
             a3.classList.add("buttonmain")
             a3.onclick = function (event) {
+
                 antwert(event, a, a.A3);
+
             };
+            var but = document.createElement("button")
+            var butin = document.createTextNode("Abbrechen")
+            but.appendChild(butin)
+            but.classList.add("buttim")
+            but.onclick = function(){
+                loadabbrechen();
+                
+            }
             a1.appendChild(a1in)
             a2.appendChild(a2in)
             a3.appendChild(a3in)
             diva.appendChild(a1)
             diva.appendChild(a2)
             diva.appendChild(a3)
+            diva.appendChild(but)
             fr.appendChild(frin);
             dil.appendChild(fr);
+            
             dil.appendChild(diva)
-            elem.appendChild(dil)
+            divs.appendChild(dil)
+            
+            elem.appendChild(fra)
+            elem.appendChild(divs)
             return elem;
+
         }
     }
 }
+function loadabbrechen(){
+    var e = document.getElementById("quizsite");
+    var d1 = document.createElement("div");
+    d1.classList.add("d1")
+    var d2 = document.createElement("div")
+    d2.classList.add("d2")
+    var p = document.createElement("p");
+    var pin = document.createTextNode("Ihre Punktzahl beträgt "+richtigfrage.length+" . Sind sie sicher das sie sie aufhören wollen?")
+    var b = document.createElement("button");
+    var bin = document.createTextNode("JA")
+    b.classList.add("ja");
+    b.onclick = function(){
+        y = 0;
+        b = 1;
+        richtigfrage = [];
+        loadanypage(5)
+    }
+    var b1 = document.createElement("button");
+    var b1in = document.createTextNode("NEIN");
+    b1.classList.add("nein");
+    b1.onclick = function(){
+        loadanypage(7)
+    }
+    p.appendChild(pin);
+    b.appendChild(bin)
+    b1.appendChild(b1in)
+    d1.appendChild(p)
+    d1.appendChild(b)
+    d1.appendChild(b1)
+    e.appendChild(d1)
+    e.appendChild(d2)
+}
+
 function helppeople() {
     var ini = document.getElementById("heplless");
-    var divcan = document.createElement("canvas");
+    var divcan = document.createElement("div");
     divcan.classList.add("canvas")
     var divhol = document.createElement("div")
     divhol.classList.add("hol");
@@ -220,9 +276,6 @@ function helppeople() {
     ini.appendChild(divcan)
     ini.appendChild(divhol);
 
-    var canvas = document.querySelector("canvas");
-    var c = canvas.getContext("2d");
-    console.warn(c);
 }
 function antwert(event, frage, selectedAnswer) {
     var eleme = document.getElementById("quiz")
@@ -271,6 +324,7 @@ function antwert(event, frage, selectedAnswer) {
 }
 
 function closeantwert() {
+    b++
     y++
     document.getElementById("quiz").innerHTML = "";
     document.getElementsByClassName("dil").innerHTML = "";
@@ -297,6 +351,7 @@ function showresult() {
     var butin = document.createTextNode("Startseite")
     but.appendChild(butin)
     but.onclick = function () {
+        b = 1;
         y = 0;
         richtigfrage = [];
         loadanypage(5);
